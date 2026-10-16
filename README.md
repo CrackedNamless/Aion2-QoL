@@ -45,13 +45,15 @@ Full list in the [changelog](CHANGELOG.md).
 | **Filters and progress** | Grouped categories with counters. Mark markers as found, hide what you finished, and keep your progress between sessions. |
 | **Quick search and item finder** | <kbd>Ctrl</kbd>+<kbd>F</kbd> finds a boss, named monster, dungeon, portal, merchant, quest, pet or **item** on the map you are on. Click a result: the spot is pinged and an on-screen arrow guides you there, then both clear themselves when you arrive. |
 | **Routes** | Add stops with <kbd>R</kbd>, open the planner with <kbd>O</kbd>, or let auto-route chain gathering points, feathers or cubes by distance. Routes can be saved and reused. |
-| **Live DPS meter** | Damage per second, share and crit rate per player. Solo or party scope, top 5 plus your own rank, boss and overall views, dungeon run history and per-skill detail. |
+| **Live DPS meter** | Damage per second, share and crit rate per player. Solo or party scope, top 5 plus your own rank, boss and overall views, dungeon run history (including Shattered Arkanis and Deus Research Base) and per-skill detail. |
 | **Event timers** | Shugo, Dimensional Invasion, Rift, Kaira, Siege, Nahma, daily and weekly resets, plus FPS, ping and server time. |
 | **Hidden Cube finder** | <kbd>Ctrl</kbd>+<kbd>F9</kbd> points the waypoint arrow at the nearest Hidden Cube around you (about 100 m). |
 | **Minimap and waypoint arrow** | A live minimap in the corner and an arrow that points at your current target. |
 | **Layout editor** | Move every widget on a grid with magnetic centre lines, switch each one on or off, and save. Click-through mode keeps the overlay out of your way. |
 | **Game news** | Patch notes, events and maintenance without leaving the game, with how long ago each was posted. |
+| **Map button** | A small round button with the app icon floats over the game: click it to open or close the map, drag it anywhere. It hides while a game menu is open. |
 | **Starts by itself** | Install it once. It starts with Windows, waits quietly in the tray and is ready the moment AION 2 opens. |
+| **Stays running** | Runs as administrator without a manual step, and restarts itself if it ever crashes while the game is still open. |
 | **Auto-update** | New versions are downloaded in the background and verified with a digital signature before they are applied. |
 
 ## Screenshots
@@ -100,7 +102,7 @@ Full list in the [changelog](CHANGELOG.md).
 1. Download **Aion2-QoL-Setup.exe** with the button above and run it.
 2. The installer downloads the **latest release** from GitHub, checks its digital signature and installs it. It is a small file because it always fetches the newest version, so this is the only installer you will ever need. The first install downloads about 190 MB (maps and icons).
 3. It installs [Npcap](https://npcap.com) for the DPS meter if you do not have it, and sets Aion2-QoL to **start by itself** with Windows. It runs silently in the system tray and picks up AION 2 as soon as the game opens, so there is nothing to launch before you play.
-4. Start AION 2 and press <kbd>Right Shift</kbd>. A short guided tour opens the first time.
+4. Start AION 2 and press <kbd>Right Shift</kbd>. A guided tour of the map, timers and DPS meter opens the first time (replay it from <kbd>F1</kbd>).
 
 **Requirements:** Windows 10 or 11 (64-bit), AION 2 running in borderless or windowed mode so the overlay can draw above it.
 
