@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Read the troubleshooting section first
+    url: https://github.com/CrackedNamless/Aion2-QoL#troubleshooting
+    about: Common problems and their fixes.
