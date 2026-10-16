@@ -2,6 +2,19 @@
 
 Notes for each release also appear on the [Releases](https://github.com/CrackedNamless/Aion2-QoL/releases) page. Versions before 1.4.0 are listed there.
 
+## 1.5.0
+
+### Added
+- **Map button.** A small round button with the app icon floats over the game. Click it to open or close the map (a fallback for Right Shift), drag it anywhere without the layout editor. It hides while a game menu is open.
+- **DPS meter in Transcendence dungeons.** Shattered Arkanis and Deus Research Base now run in dungeon mode with readable run names, and hub areas (lobby, legion, artifact) are no longer treated as dungeons.
+- **Guided tour extended to 21 steps.** It now covers the map button, the timer strip with its details and settings, and the DPS meter: list, party check, skill breakdown, dungeon runs and settings, each with a preview.
+- **Crash recovery.** If the program crashes while the game is still open it restarts by itself.
+
+### Changed
+- Starting the program by hand now asks for administrator rights automatically, so the map, minimap and FPS counter always work.
+- Alt+F4 is ignored by the overlays, so it can no longer close the program by accident.
+- The map footer reads "Made by CrackedNamless".
+
 ## 1.4.0
 
 ### Added
