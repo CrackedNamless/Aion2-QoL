@@ -27,13 +27,15 @@
 
 ## What's new
 
-**1.4.0**
+**1.5.0**
 
-- **Layout editor.** Press *Layout* on the map: the map steps aside and a grid appears over the game, so you can place the minimap, arrow, timers and DPS meter exactly where you want. Magnetic centre lines help you centre them, and positions are remembered.
-- **Item finder.** <kbd>Ctrl</kbd>+<kbd>F</kbd> now finds items too. Press <kbd>Enter</kbd> on one to see where to get it: drops, crafting, shops, gathering, quests and dungeons.
-- **Dimensional Invasion timer** on the event strip.
-- **Dungeon-aware DPS meter** with boss and overall views, plus a history of your dungeon runs.
-- **A new map.** Opaque, near full screen, sharper and smoother to pan and zoom, and always above the other overlays.
+- **Map button.** A small round button with the app icon floats over the game. Click it to open or close the map (a fallback for Right Shift), drag it anywhere without the layout editor. It hides while a game menu is open.
+- **DPS meter in Transcendence dungeons.** Shattered Arkanis and Deus Research Base now run in dungeon mode with readable run names, and hub areas (lobby, legion, artifact) are no longer treated as dungeons.
+- **Guided tour extended to 21 steps.** It now covers the map button, the timer strip with its details and settings, and the DPS meter: list, party check, skill breakdown, dungeon runs and settings, each with a preview.
+- **Crash recovery.** If the program crashes while the game is still open it restarts by itself.
+- Starting the program by hand now asks for administrator rights automatically, so the map, minimap and FPS counter always work.
+- Alt+F4 is ignored by the overlays, so it can no longer close the program by accident.
+- The map footer reads "Made by CrackedNamless".
 
 Full list in the [changelog](CHANGELOG.md).
 
