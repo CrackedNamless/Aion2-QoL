@@ -13,8 +13,9 @@
 [![Latest release](https://img.shields.io/github/v/release/CrackedNamless/Aion2-QoL?style=for-the-badge&color=e3bd6e&labelColor=161d2e)](https://github.com/CrackedNamless/Aion2-QoL/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/CrackedNamless/Aion2-QoL/total?style=for-the-badge&color=e3bd6e&labelColor=161d2e)](https://github.com/CrackedNamless/Aion2-QoL/releases)
 ![Platform](https://img.shields.io/badge/Windows-10%20%7C%2011-e3bd6e?style=for-the-badge&labelColor=161d2e)
+[![Issues](https://img.shields.io/github/issues/CrackedNamless/Aion2-QoL?style=for-the-badge&color=e3bd6e&labelColor=161d2e)](https://github.com/CrackedNamless/Aion2-QoL/issues)
 
-**An overlay that adds an interactive map, a live DPS meter, event timers, routes, quick search and game news to AION 2.**
+**A quality-of-life overlay for AION 2: interactive map, live DPS meter, event timers, routes, item finder and game news, one key away.**
 
 </div>
 
@@ -22,7 +23,19 @@
 
 ## Contents
 
-[Features](#features) · [Screenshots](#screenshots) · [Install](#install) · [Shortcuts](#shortcuts) · [Updates](#updates) · [Windows warnings](#windows-warnings) · [How it works](#how-it-works) · [FAQ](#faq)
+[What's new](#whats-new) · [Features](#features) · [Screenshots](#screenshots) · [Install](#install) · [Shortcuts](#shortcuts) · [Updates](#updates) · [Privacy and safety](#privacy-and-safety) · [Troubleshooting](#troubleshooting) · [FAQ](#faq) · [Changelog](CHANGELOG.md)
+
+## What's new
+
+**1.4.0**
+
+- **Layout editor.** Press *Layout* on the map: the map steps aside and a grid appears over the game, so you can place the minimap, arrow, timers and DPS meter exactly where you want. Magnetic centre lines help you centre them, and positions are remembered.
+- **Item finder.** <kbd>Ctrl</kbd>+<kbd>F</kbd> now finds items too. Press <kbd>Enter</kbd> on one to see where to get it: drops, crafting, shops, gathering, quests and dungeons.
+- **Dimensional Invasion timer** on the event strip.
+- **Dungeon-aware DPS meter** with boss and overall views, plus a history of your dungeon runs.
+- **A new map.** Opaque, near full screen, sharper and smoother to pan and zoom, and always above the other overlays.
+
+Full list in the [changelog](CHANGELOG.md).
 
 ## Features
 
@@ -30,14 +43,15 @@
 |---|---|
 | **Interactive map** | Altgard, Reshanta and Verteron with thousands of markers: bosses, named monsters, dungeons, portals, merchants, quests, gathering points and pets. Open it in game with <kbd>Right Shift</kbd>. |
 | **Filters and progress** | Grouped categories with counters. Mark markers as found, hide what you finished, and keep your progress between sessions. |
-| **Starts by itself** | Install it once. It starts with Windows, waits quietly in the tray and is ready the moment AION 2 opens. Nothing to launch. |
-| **Quick search** | <kbd>Ctrl</kbd>+<kbd>F</kbd> finds a boss, named monster, dungeon, portal, merchant, quest or pet on the map you are on. Click a result: the card closes, the spot is pinged and an on-screen arrow guides you there, then both clear themselves when you arrive. |
+| **Quick search and item finder** | <kbd>Ctrl</kbd>+<kbd>F</kbd> finds a boss, named monster, dungeon, portal, merchant, quest, pet or **item** on the map you are on. Click a result: the spot is pinged and an on-screen arrow guides you there, then both clear themselves when you arrive. |
 | **Routes** | Add stops with <kbd>R</kbd>, open the planner with <kbd>O</kbd>, or let auto-route chain gathering points, feathers or cubes by distance. Routes can be saved and reused. |
-| **Live DPS meter** | Damage per second, share and crit rate per player, solo or party scope, top 5 plus your own rank, per-skill detail. Resets when you change map. |
-| **Event timers** | Shugo, Rift, Kaira, Siege, daily and weekly resets, plus FPS, ping and server time. |
+| **Live DPS meter** | Damage per second, share and crit rate per player. Solo or party scope, top 5 plus your own rank, boss and overall views, dungeon run history and per-skill detail. |
+| **Event timers** | Shugo, Dimensional Invasion, Rift, Kaira, Siege, Nahma, daily and weekly resets, plus FPS, ping and server time. |
+| **Hidden Cube finder** | <kbd>Ctrl</kbd>+<kbd>F9</kbd> points the waypoint arrow at the nearest Hidden Cube around you (about 100 m). |
 | **Minimap and waypoint arrow** | A live minimap in the corner and an arrow that points at your current target. |
+| **Layout editor** | Move every widget on a grid with magnetic centre lines, switch each one on or off, and save. Click-through mode keeps the overlay out of your way. |
 | **Game news** | Patch notes, events and maintenance without leaving the game, with how long ago each was posted. |
-| **Your layout** | Turn widgets on or off, move them where you like, and switch on click-through so the overlay never gets in the way. |
+| **Starts by itself** | Install it once. It starts with Windows, waits quietly in the tray and is ready the moment AION 2 opens. |
 | **Auto-update** | New versions are downloaded in the background and verified with a digital signature before they are applied. |
 
 ## Screenshots
@@ -53,23 +67,27 @@
 </tr>
 <tr>
 <td><img src="docs/06_search.png" alt="Quick search"><br><sub><b>Quick search</b> with <kbd>Ctrl</kbd>+<kbd>F</kbd>.</sub></td>
-<td><img src="docs/07_route.png" alt="Routes"><br><sub><b>Routes</b> planned in seconds.</sub></td>
+<td><img src="docs/07_items.png" alt="Item finder"><br><sub><b>Item finder</b>: where to get any item.</sub></td>
 </tr>
 <tr>
-<td><img src="docs/09_dps.png" alt="DPS meter"><br><sub><b>Live DPS meter</b>.</sub></td>
-<td><img src="docs/10_timers.png" alt="Timers"><br><sub><b>Event timers</b> at a glance.</sub></td>
+<td><img src="docs/08_route.png" alt="Routes"><br><sub><b>Routes</b> planned in seconds.</sub></td>
+<td><img src="docs/09_news.png" alt="News"><br><sub><b>Game news</b> without alt-tabbing.</sub></td>
 </tr>
 <tr>
-<td><img src="docs/11_hud.png" alt="Minimap"><br><sub><b>Minimap</b> and waypoint arrow.</sub></td>
-<td><img src="docs/08_news.png" alt="News"><br><sub><b>Game news</b> without alt-tabbing.</sub></td>
+<td><img src="docs/10_dps.png" alt="DPS meter"><br><sub><b>Live DPS meter</b>.</sub></td>
+<td><img src="docs/11_timers.png" alt="Timers"><br><sub><b>Event timers</b> at a glance.</sub></td>
 </tr>
 <tr>
-<td><img src="docs/12_widgets.png" alt="Widgets"><br><sub><b>Your overlay, your layout</b>.</sub></td>
-<td><img src="docs/13_tour.png" alt="Guided tour"><br><sub><b>Guided tour</b> on first run.</sub></td>
+<td><img src="docs/12_hud.png" alt="Minimap"><br><sub><b>Minimap</b> and waypoint arrow.</sub></td>
+<td><img src="docs/13_widgets.png" alt="Layout editor"><br><sub><b>Layout editor</b>: place every widget.</sub></td>
 </tr>
 <tr>
-<td><img src="docs/16_install.png" alt="Install"><br><sub><b>One installer</b>, always the latest version.</sub></td>
-<td><img src="docs/17_autostart.png" alt="Automatic start"><br><sub><b>Starts by itself</b> when you play.</sub></td>
+<td><img src="docs/14_tour.png" alt="Guided tour"><br><sub><b>Guided tour</b> on first run.</sub></td>
+<td><img src="docs/16_help.png" alt="Built-in help"><br><sub><b>Built-in help</b> on the map.</sub></td>
+</tr>
+<tr>
+<td><img src="docs/17_install.png" alt="Install"><br><sub><b>One installer</b>, always the latest version.</sub></td>
+<td><img src="docs/18_autostart.png" alt="Automatic start"><br><sub><b>Starts by itself</b> when you play.</sub></td>
 </tr>
 </table>
 
@@ -84,9 +102,9 @@
 3. It installs [Npcap](https://npcap.com) for the DPS meter if you do not have it, and sets Aion2-QoL to **start by itself** with Windows. It runs silently in the system tray and picks up AION 2 as soon as the game opens, so there is nothing to launch before you play.
 4. Start AION 2 and press <kbd>Right Shift</kbd>. A short guided tour opens the first time.
 
-Requirements: Windows 10 or 11 (64-bit), AION 2 running in borderless or windowed mode so the overlay can draw above it.
+**Requirements:** Windows 10 or 11 (64-bit), AION 2 running in borderless or windowed mode so the overlay can draw above it.
 
-To uninstall use *Settings > Apps*. Your settings live in the install folder and are removed with it.
+**Uninstall:** *Settings > Apps*. Your settings live in the install folder and are removed with it.
 
 ## Shortcuts
 
@@ -95,36 +113,45 @@ Global hotkeys work in game. Map keys work while the map is open, and <kbd>F1</k
 | Key | Action | | Key | Action |
 |---|---|---|---|---|
 | <kbd>Right Shift</kbd> | Open or close the map | | <kbd>Scroll</kbd> | Zoom |
-| <kbd>Ctrl</kbd>+<kbd>F</kbd> | Quick search | | <kbd>Drag</kbd> | Pan the map |
+| <kbd>Ctrl</kbd>+<kbd>F</kbd> | Quick search and item finder | | <kbd>Drag</kbd> | Pan the map |
 | <kbd>Ctrl</kbd>+<kbd>F6</kbd> | Minimap | | <kbd>Click</kbd> | Select a marker |
 | <kbd>Ctrl</kbd>+<kbd>F7</kbd> | DPS meter | | <kbd>F</kbd> | Mark as found |
 | <kbd>Ctrl</kbd>+<kbd>F8</kbd> | Event timers | | <kbd>H</kbd> | Hide found markers |
-| <kbd>Ctrl</kbd>+<kbd>F10</kbd> | Click-through mode | | <kbd>G</kbd> | Guide arrow to the selection |
-| <kbd>F1</kbd> | Help and shortcuts | | <kbd>L</kbd> | Follow the player |
-| <kbd>Tab</kbd> | Next zone | | <kbd>R</kbd> / <kbd>O</kbd> | Add route stop / route planner |
-| <kbd>B</kbd> | Side panel | | <kbd>N</kbd> | News |
-| Right-click | Fit the map to the screen | | | |
+| <kbd>Ctrl</kbd>+<kbd>F9</kbd> | Hidden Cube finder | | <kbd>G</kbd> | Guide arrow to the selection |
+| <kbd>Ctrl</kbd>+<kbd>F10</kbd> | Click-through mode | | <kbd>L</kbd> | Follow the player |
+| <kbd>F1</kbd> | Help and shortcuts | | <kbd>R</kbd> / <kbd>O</kbd> | Add route stop / route planner |
+| <kbd>Tab</kbd> | Next zone | | <kbd>N</kbd> | News |
+| <kbd>B</kbd> | Side panel | | Right-click | Fit the map to the screen |
 
-<div align="center"><img src="docs/14_hotkeys.png" alt="Shortcuts" width="80%"></div>
+<div align="center"><img src="docs/15_hotkeys.png" alt="Shortcuts" width="80%"></div>
 
 ## Updates
 
-Aion2-QoL checks GitHub for a new release when it starts. If one exists it downloads only the parts that changed, verifies them against the signed manifest and applies them. Nothing is installed from a release whose signature does not match the key built into the program.
+Aion2-QoL checks GitHub for a new release when it starts. If one exists it downloads only the parts that changed, verifies them against the signed manifest and applies them. Nothing is installed from a release whose signature does not match the key built into the program. Release notes for every version are on the [Releases](https://github.com/CrackedNamless/Aion2-QoL/releases) page.
 
-## Windows warnings
+## Privacy and safety
 
-The installer and the program are not code-signed with a paid certificate, so Windows may show a SmartScreen or "unknown publisher" prompt the first time. This is expected for a small independent project: choose *More info > Run anyway*.
-
-Every update is checked against a separate ECDSA signing key whose public half is embedded in the program, so a tampered update is rejected.
-
-## How it works
-
-- **DPS meter**: reads your own network traffic through Npcap (packet capture). It does not touch the game process.
-- **Player position and minimap**: read from the game's memory in read-only mode. Nothing is injected into the game and no input is sent to it.
-- **Map, search, routes, news**: local data shipped with the program and refreshed through updates.
-- **Online heights**: optional, anonymous crowd-sourced terrain heights used to place the player more precisely.
+- **DPS meter:** reads your own network traffic through Npcap (packet capture). It does not touch the game process.
+- **Player position and minimap:** read from the game's memory in read-only mode. Nothing is injected into the game and no input is sent to it.
+- **Map, search, routes, news:** local data shipped with the program and refreshed through updates.
+- **Online heights:** optional and anonymous, crowd-sourced terrain heights used to place the player more precisely. No account, no personal data.
+- **Updates:** every package is checked against an ECDSA signature whose public key is built into the program, so a tampered update is rejected.
+- **Windows warnings:** the installer and the program are not signed with a paid certificate, so Windows may show a SmartScreen or "unknown publisher" prompt the first time. This is expected for a small independent project: choose *More info > Run anyway*.
 
 Aion2-QoL is a fan-made tool and is **not affiliated with NCSOFT**. AION is a trademark of its respective owners. Third-party tools can be restricted by a game's rules: use it at your own risk.
+
+## Troubleshooting
+
+| Problem | What to do |
+|---|---|
+| The overlay does not appear | Run AION 2 in borderless or windowed mode, then press <kbd>Right Shift</kbd>. Check that the Aion2-QoL icon is in the system tray. |
+| The DPS meter shows nothing | Make sure Npcap is installed (the installer offers it) and that you are in a fight. Press <kbd>Ctrl</kbd>+<kbd>F7</kbd> to toggle it. |
+| The overlay blocks my mouse | Press <kbd>Ctrl</kbd>+<kbd>F10</kbd> for click-through mode. |
+| A widget is in the wrong place | Open the map, press *Layout*, drag it where you want, then Save. |
+| Quick search says "Search unavailable" | Search works on the maps that are fully supported (Altgard, Reshanta and Verteron). In dungeons and other maps there is nothing to search yet. |
+| Windows shows a SmartScreen warning | Choose *More info > Run anyway*, see [Privacy and safety](#privacy-and-safety). |
+
+Still stuck? Open an [issue](https://github.com/CrackedNamless/Aion2-QoL/issues/new/choose) and describe what you see.
 
 ## FAQ
 
@@ -132,15 +159,9 @@ Aion2-QoL is a fan-made tool and is **not affiliated with NCSOFT**. AION is a tr
 
 **Do I have to start it every time?** No. It starts with Windows and attaches to AION 2 on its own. To quit it use the tray icon.
 
-**Quick search says "Search unavailable".** Search only works on maps that are fully supported (Altgard, Reshanta and Verteron for now). In dungeons and other maps there is nothing to search yet.
-
 **Do I need to download a new installer after each update?** No. The program updates itself and the installer always fetches the newest release.
 
-**The DPS meter shows nothing.** Make sure Npcap is installed (the installer offers it) and that you are in a fight. Press <kbd>Ctrl</kbd>+<kbd>F7</kbd> to toggle it.
-
-**The overlay blocks my mouse.** Press <kbd>Ctrl</kbd>+<kbd>F10</kbd> for click-through mode.
-
-**Where do I report a problem?** Open an [issue](https://github.com/CrackedNamless/Aion2-QoL/issues).
+**Where do I report a problem or suggest something?** Open an [issue](https://github.com/CrackedNamless/Aion2-QoL/issues/new/choose). Bug reports and feature requests each have a short form.
 
 ---
 
