@@ -1,0 +1,34 @@
+name: Bug report
+description: Something does not work as expected
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: Describe the problem and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How can it be reproduced?
+      placeholder: "Steps, one per line"
+  - type: input
+    id: version
+    attributes:
+      label: Aion2-QoL version
+      description: The version you installed, for example 1.4.0.
+      placeholder: "1.4.0"
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version and game display mode
+      placeholder: "Windows 11, borderless"
+  - type: textarea
+    id: shots
+    attributes:
+      label: Screenshots
+      description: Drag images here if they help.
