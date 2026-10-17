@@ -27,16 +27,14 @@
 
 ## What's new
 
-**1.6.0**
+**1.7.0**
 
-- **Party check popup.** When you join a party a centered card lists every member with class, level, gear score, combat power and server. It closes by itself when the party ends or when you enter an expedition or a Transcendence.
-- **Party QoL menu.** A new *Party QoL* button on the map toolbar opens a card with a switch for the party check. When it is off the popup is disabled completely.
-- **Server column** in the party tab of the DPS meter.
-- **CPU and GPU load** (and GPU temperature on NVIDIA cards) as a second row on the timer strip, with a switch in its settings.
-- **New waypoint arrow.** A redesigned 3D arrow with a symmetric shape and the game's colour palette.
-- **Bottom-right buttons on the map:** check for updates, changelog, GitHub and issues.
-- The map toolbar is now Route, Layout, News, Party QoL and Help.
-- Guided tour extended to 23 steps (Party QoL and the corner buttons, new timer strip and party check texts) and the help card updated.
+- **Pet farm list.** A new widget (`Ctrl+F5`) tracks the pets you are farming, with live soul progress, three stage bars and a +N flash whenever a soul lands. Pick pets with the "+" button by type (Cogni, Fera, Natura, Varian, Special) and by map. Maxed pets move to their own tab.
+- **Guided farming.** Click a pet to get a ping and the arrow, plus the nearest teleporter when it saves you a long run. On another map it tells you where to farm. When a pet reaches MAX the closest pet you are tracking is guided for you.
+- **Pets card.** Press `P` on the map to browse your whole pet collection with live souls and click a pet to find its spawns.
+- **Open world DPS.** A new "Open world: Everyone / Only me" setting, and the DPS rows now slide smoothly when the ranking changes.
+- Pet farm list in the guided tour (24 steps), in the widget editor and in the shortcut list.
+- The map toolbar's *Layout* button is now **Widgets**, and the toolbar reads Route, Widgets, News, Party QoL and Help. The pet buttons were removed from the toolbar: the Pets card stays on `P`.
 
 Full list in the [changelog](CHANGELOG.md).
 
@@ -54,7 +52,8 @@ Full list in the [changelog](CHANGELOG.md).
 | **Party QoL** | The map toolbar's *Party QoL* menu switches the party check on or off. When it is off the popup is disabled completely. |
 | **Hidden Cube finder** | <kbd>Ctrl</kbd>+<kbd>F9</kbd> points the waypoint arrow at the nearest Hidden Cube around you (about 100 m). |
 | **Minimap and waypoint arrow** | A live minimap in the corner and a redesigned 3D arrow that points at your current target, with distance and height difference. |
-| **Layout editor** | Move every widget on a grid with magnetic centre lines, switch each one on or off, and save. Click-through mode keeps the overlay out of your way. |
+| **Pet farm list** | <kbd>Ctrl</kbd>+<kbd>F5</kbd> shows the pets you are farming with live souls. Pick them by type and map, click one for a ping, the arrow and the nearest teleporter, and the next closest pet is guided when one is maxed. |
+| **Widgets** | The map's *Widgets* button lets you move every widget on a grid with magnetic centre lines, switch each one on or off, and save. Click-through mode keeps the overlay out of your way. |
 | **Game news** | Patch notes, events and maintenance without leaving the game, with how long ago each was posted. |
 | **Map shortcuts** | Update, changelog, GitHub and issues buttons sit at the bottom right of the map. |
 | **Map button** | A small round button with the app icon floats over the game: click it to open or close the map, drag it anywhere. It hides while a game menu is open. |
@@ -91,15 +90,19 @@ Full list in the [changelog](CHANGELOG.md).
 </tr>
 <tr>
 <td width="50%"><img src="docs/14_arrow.png" alt="Waypoint arrow"><br><sub><b>New 3D arrow</b> with distance and height.</sub></td>
-<td width="50%"><img src="docs/15_widgets.png" alt="Layout editor"><br><sub><b>Layout editor</b>: place every widget.</sub></td>
+<td width="50%"><img src="docs/15_petfarm.png" alt="Pet farm list"><br><sub><b>Pet farm list</b> with guided farming.</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="docs/16_tour.png" alt="Guided tour"><br><sub><b>Guided tour</b> on first run.</sub></td>
-<td width="50%"><img src="docs/18_help.png" alt="Built-in help"><br><sub><b>Built-in help</b> on the map.</sub></td>
+<td width="50%"><img src="docs/16_widgets.png" alt="Widgets"><br><sub><b>Widgets</b>: place every widget.</sub></td>
+<td width="50%"><img src="docs/17_tour.png" alt="Guided tour"><br><sub><b>Guided tour</b> on first run.</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="docs/19_install.png" alt="Install"><br><sub><b>One installer</b>, always the latest version.</sub></td>
-<td width="50%"><img src="docs/20_autostart.png" alt="Automatic start"><br><sub><b>Starts by itself</b> when you play.</sub></td>
+<td width="50%"><img src="docs/19_help.png" alt="Built-in help"><br><sub><b>Built-in help</b> on the map.</sub></td>
+<td width="50%"><img src="docs/20_install.png" alt="Install"><br><sub><b>One installer</b>, always the latest version.</sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="docs/21_autostart.png" alt="Automatic start"><br><sub><b>Starts by itself</b> when you play.</sub></td>
+<td width="50%"></td>
 </tr>
 </table>
 
@@ -126,7 +129,8 @@ Global hotkeys work in game. Map keys work while the map is open, and <kbd>F1</k
 |---|---|---|---|---|
 | <kbd>Right Shift</kbd> | Open or close the map | | <kbd>Scroll</kbd> | Zoom |
 | <kbd>Ctrl</kbd>+<kbd>F</kbd> | Quick search and item finder | | <kbd>Drag</kbd> | Pan the map |
-| <kbd>Ctrl</kbd>+<kbd>F6</kbd> | Minimap | | <kbd>Click</kbd> | Select a marker |
+| <kbd>Ctrl</kbd>+<kbd>F5</kbd> | Pet farm list | | <kbd>Click</kbd> | Select a marker |
+| <kbd>Ctrl</kbd>+<kbd>F6</kbd> | Minimap | | <kbd>P</kbd> | Pets card |
 | <kbd>Ctrl</kbd>+<kbd>F7</kbd> | DPS meter | | <kbd>F</kbd> | Mark as found |
 | <kbd>Ctrl</kbd>+<kbd>F8</kbd> | Event timers | | <kbd>H</kbd> | Hide found markers |
 | <kbd>Ctrl</kbd>+<kbd>F9</kbd> | Hidden Cube finder | | <kbd>G</kbd> | Guide arrow to the selection |
@@ -135,7 +139,7 @@ Global hotkeys work in game. Map keys work while the map is open, and <kbd>F1</k
 | <kbd>Tab</kbd> | Next zone | | <kbd>N</kbd> | News |
 | <kbd>B</kbd> | Side panel | | Right-click | Fit the map to the screen |
 
-<div align="center"><img src="docs/17_hotkeys.png" alt="Shortcuts" width="80%"></div>
+<div align="center"><img src="docs/18_hotkeys.png" alt="Shortcuts" width="80%"></div>
 
 ## Updates
 
@@ -159,7 +163,7 @@ Aion2-QoL is a fan-made tool and is **not affiliated with NCSOFT**. AION is a tr
 | The overlay does not appear | Run AION 2 in borderless or windowed mode, then press <kbd>Right Shift</kbd>. Check that the Aion2-QoL icon is in the system tray. |
 | The DPS meter shows nothing | Make sure Npcap is installed (the installer offers it) and that you are in a fight. Press <kbd>Ctrl</kbd>+<kbd>F7</kbd> to toggle it. |
 | The overlay blocks my mouse | Press <kbd>Ctrl</kbd>+<kbd>F10</kbd> for click-through mode. |
-| A widget is in the wrong place | Open the map, press *Layout*, drag it where you want, then Save. |
+| A widget is in the wrong place | Open the map, press *Widgets*, drag it where you want, then Save. |
 | Quick search says "Search unavailable" | Search works on the maps that are fully supported (Altgard, Reshanta and Verteron). In dungeons and other maps there is nothing to search yet. |
 | Windows shows a SmartScreen warning | Choose *More info > Run anyway*, see [Privacy and safety](#privacy-and-safety). |
 
