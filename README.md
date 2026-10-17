@@ -15,7 +15,7 @@
 ![Platform](https://img.shields.io/badge/Windows-10%20%7C%2011-e3bd6e?style=for-the-badge&labelColor=161d2e)
 [![Issues](https://img.shields.io/github/issues/CrackedNamless/Aion2-QoL?style=for-the-badge&color=e3bd6e&labelColor=161d2e)](https://github.com/CrackedNamless/Aion2-QoL/issues)
 
-**A quality-of-life overlay for AION 2: interactive map, live DPS meter, event timers, routes, item finder and game news, one key away.**
+**A quality-of-life overlay for AION 2: interactive map, live DPS meter with party check, event timers, routes, item finder and game news, one key away.**
 
 </div>
 
@@ -27,15 +27,16 @@
 
 ## What's new
 
-**1.5.0**
+**1.6.0**
 
-- **Map button.** A small round button with the app icon floats over the game. Click it to open or close the map (a fallback for Right Shift), drag it anywhere without the layout editor. It hides while a game menu is open.
-- **DPS meter in Transcendence dungeons.** Shattered Arkanis and Deus Research Base now run in dungeon mode with readable run names, and hub areas (lobby, legion, artifact) are no longer treated as dungeons.
-- **Guided tour extended to 21 steps.** It now covers the map button, the timer strip with its details and settings, and the DPS meter: list, party check, skill breakdown, dungeon runs and settings, each with a preview.
-- **Crash recovery.** If the program crashes while the game is still open it restarts by itself.
-- Starting the program by hand now asks for administrator rights automatically, so the map, minimap and FPS counter always work.
-- Alt+F4 is ignored by the overlays, so it can no longer close the program by accident.
-- The map footer reads "Made by CrackedNamless".
+- **Party check popup.** When you join a party a centered card lists every member with class, level, gear score, combat power and server. It closes by itself when the party ends or when you enter an expedition or a Transcendence.
+- **Party QoL menu.** A new *Party QoL* button on the map toolbar opens a card with a switch for the party check. When it is off the popup is disabled completely.
+- **Server column** in the party tab of the DPS meter.
+- **CPU and GPU load** (and GPU temperature on NVIDIA cards) as a second row on the timer strip, with a switch in its settings.
+- **New waypoint arrow.** A redesigned 3D arrow with a symmetric shape and the game's colour palette.
+- **Bottom-right buttons on the map:** check for updates, changelog, GitHub and issues.
+- The map toolbar is now Route, Layout, News, Party QoL and Help.
+- Guided tour extended to 23 steps (Party QoL and the corner buttons, new timer strip and party check texts) and the help card updated.
 
 Full list in the [changelog](CHANGELOG.md).
 
@@ -48,11 +49,14 @@ Full list in the [changelog](CHANGELOG.md).
 | **Quick search and item finder** | <kbd>Ctrl</kbd>+<kbd>F</kbd> finds a boss, named monster, dungeon, portal, merchant, quest, pet or **item** on the map you are on. Click a result: the spot is pinged and an on-screen arrow guides you there, then both clear themselves when you arrive. |
 | **Routes** | Add stops with <kbd>R</kbd>, open the planner with <kbd>O</kbd>, or let auto-route chain gathering points, feathers or cubes by distance. Routes can be saved and reused. |
 | **Live DPS meter** | Damage per second, share and crit rate per player. Solo or party scope, top 5 plus your own rank, boss and overall views, dungeon run history (including Shattered Arkanis and Deus Research Base) and per-skill detail. |
-| **Event timers** | Shugo, Dimensional Invasion, Rift, Kaira, Siege, Nahma, daily and weekly resets, plus FPS, ping and server time. |
+| **Event timers** | Shugo, Dimensional Invasion, Rift, Kaira, Siege, Nahma, daily and weekly resets, plus FPS, ping, server time and an optional CPU / GPU load row. |
+| **Party check** | A card opens when you join a party and lists every member with class, level, server, gear score and combat power. It closes by itself in expeditions and Transcendence dungeons. |
+| **Party QoL** | The map toolbar's *Party QoL* menu switches the party check on or off. When it is off the popup is disabled completely. |
 | **Hidden Cube finder** | <kbd>Ctrl</kbd>+<kbd>F9</kbd> points the waypoint arrow at the nearest Hidden Cube around you (about 100 m). |
-| **Minimap and waypoint arrow** | A live minimap in the corner and an arrow that points at your current target. |
+| **Minimap and waypoint arrow** | A live minimap in the corner and a redesigned 3D arrow that points at your current target, with distance and height difference. |
 | **Layout editor** | Move every widget on a grid with magnetic centre lines, switch each one on or off, and save. Click-through mode keeps the overlay out of your way. |
 | **Game news** | Patch notes, events and maintenance without leaving the game, with how long ago each was posted. |
+| **Map shortcuts** | Update, changelog, GitHub and issues buttons sit at the bottom right of the map. |
 | **Map button** | A small round button with the app icon floats over the game: click it to open or close the map, drag it anywhere. It hides while a game menu is open. |
 | **Starts by itself** | Install it once. It starts with Windows, waits quietly in the tray and is ready the moment AION 2 opens. |
 | **Stays running** | Runs as administrator without a manual step, and restarts itself if it ever crashes while the game is still open. |
@@ -66,32 +70,36 @@ Full list in the [changelog](CHANGELOG.md).
 <td width="50%"><img src="docs/03_reshanta.png" alt="Reshanta"><br><sub><b>Altgard, Reshanta and Verteron</b>, a click apart.</sub></td>
 </tr>
 <tr>
-<td><img src="docs/04_markers.png" alt="Marker cards"><br><sub><b>Marker cards</b>: found, guide arrow, add to route.</sub></td>
-<td><img src="docs/05_filters.png" alt="Filters"><br><sub><b>Filters</b> with found counters.</sub></td>
+<td width="50%"><img src="docs/04_markers.png" alt="Marker cards"><br><sub><b>Marker cards</b>: found, guide arrow, add to route.</sub></td>
+<td width="50%"><img src="docs/05_filters.png" alt="Filters"><br><sub><b>Filters</b> with found counters.</sub></td>
 </tr>
 <tr>
-<td><img src="docs/06_search.png" alt="Quick search"><br><sub><b>Quick search</b> with <kbd>Ctrl</kbd>+<kbd>F</kbd>.</sub></td>
-<td><img src="docs/07_items.png" alt="Item finder"><br><sub><b>Item finder</b>: where to get any item.</sub></td>
+<td width="50%"><img src="docs/06_search.png" alt="Quick search"><br><sub><b>Quick search</b> with <kbd>Ctrl</kbd>+<kbd>F</kbd>.</sub></td>
+<td width="50%"><img src="docs/07_items.png" alt="Item finder"><br><sub><b>Item finder</b>: where to get any item.</sub></td>
 </tr>
 <tr>
-<td><img src="docs/08_route.png" alt="Routes"><br><sub><b>Routes</b> planned in seconds.</sub></td>
-<td><img src="docs/09_news.png" alt="News"><br><sub><b>Game news</b> without alt-tabbing.</sub></td>
+<td width="50%"><img src="docs/08_route.png" alt="Routes"><br><sub><b>Routes</b> planned in seconds.</sub></td>
+<td width="50%"><img src="docs/09_news.png" alt="News"><br><sub><b>Game news</b> without alt-tabbing.</sub></td>
 </tr>
 <tr>
-<td><img src="docs/10_dps.png" alt="DPS meter"><br><sub><b>Live DPS meter</b>.</sub></td>
-<td><img src="docs/11_timers.png" alt="Timers"><br><sub><b>Event timers</b> at a glance.</sub></td>
+<td width="50%"><img src="docs/10_dps.png" alt="DPS meter"><br><sub><b>Live DPS meter</b>.</sub></td>
+<td width="50%"><img src="docs/11_party.png" alt="Party check"><br><sub><b>Party check</b> before the dungeon.</sub></td>
 </tr>
 <tr>
-<td><img src="docs/12_hud.png" alt="Minimap"><br><sub><b>Minimap</b> and waypoint arrow.</sub></td>
-<td><img src="docs/13_widgets.png" alt="Layout editor"><br><sub><b>Layout editor</b>: place every widget.</sub></td>
+<td width="50%"><img src="docs/12_timers.png" alt="Timers"><br><sub><b>Event timers</b> with CPU / GPU load.</sub></td>
+<td width="50%"><img src="docs/13_hud.png" alt="Minimap"><br><sub><b>Minimap</b> and waypoint arrow.</sub></td>
 </tr>
 <tr>
-<td><img src="docs/14_tour.png" alt="Guided tour"><br><sub><b>Guided tour</b> on first run.</sub></td>
-<td><img src="docs/16_help.png" alt="Built-in help"><br><sub><b>Built-in help</b> on the map.</sub></td>
+<td width="50%"><img src="docs/14_arrow.png" alt="Waypoint arrow"><br><sub><b>New 3D arrow</b> with distance and height.</sub></td>
+<td width="50%"><img src="docs/15_widgets.png" alt="Layout editor"><br><sub><b>Layout editor</b>: place every widget.</sub></td>
 </tr>
 <tr>
-<td><img src="docs/17_install.png" alt="Install"><br><sub><b>One installer</b>, always the latest version.</sub></td>
-<td><img src="docs/18_autostart.png" alt="Automatic start"><br><sub><b>Starts by itself</b> when you play.</sub></td>
+<td width="50%"><img src="docs/16_tour.png" alt="Guided tour"><br><sub><b>Guided tour</b> on first run.</sub></td>
+<td width="50%"><img src="docs/18_help.png" alt="Built-in help"><br><sub><b>Built-in help</b> on the map.</sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="docs/19_install.png" alt="Install"><br><sub><b>One installer</b>, always the latest version.</sub></td>
+<td width="50%"><img src="docs/20_autostart.png" alt="Automatic start"><br><sub><b>Starts by itself</b> when you play.</sub></td>
 </tr>
 </table>
 
@@ -104,7 +112,7 @@ Full list in the [changelog](CHANGELOG.md).
 1. Download **Aion2-QoL-Setup.exe** with the button above and run it.
 2. The installer downloads the **latest release** from GitHub, checks its digital signature and installs it. It is a small file because it always fetches the newest version, so this is the only installer you will ever need. The first install downloads about 190 MB (maps and icons).
 3. It installs [Npcap](https://npcap.com) for the DPS meter if you do not have it, and sets Aion2-QoL to **start by itself** with Windows. It runs silently in the system tray and picks up AION 2 as soon as the game opens, so there is nothing to launch before you play.
-4. Start AION 2 and press <kbd>Right Shift</kbd>. A guided tour of the map, timers and DPS meter opens the first time (replay it from <kbd>F1</kbd>).
+4. Start AION 2 and press <kbd>Right Shift</kbd>. A guided tour of the map, party check, timers and DPS meter opens the first time (replay it from <kbd>F1</kbd>).
 
 **Requirements:** Windows 10 or 11 (64-bit), AION 2 running in borderless or windowed mode so the overlay can draw above it.
 
@@ -127,7 +135,7 @@ Global hotkeys work in game. Map keys work while the map is open, and <kbd>F1</k
 | <kbd>Tab</kbd> | Next zone | | <kbd>N</kbd> | News |
 | <kbd>B</kbd> | Side panel | | Right-click | Fit the map to the screen |
 
-<div align="center"><img src="docs/15_hotkeys.png" alt="Shortcuts" width="80%"></div>
+<div align="center"><img src="docs/17_hotkeys.png" alt="Shortcuts" width="80%"></div>
 
 ## Updates
 
@@ -164,6 +172,8 @@ Still stuck? Open an [issue](https://github.com/CrackedNamless/Aion2-QoL/issues/
 **Do I have to start it every time?** No. It starts with Windows and attaches to AION 2 on its own. To quit it use the tray icon.
 
 **Do I need to download a new installer after each update?** No. The program updates itself and the installer always fetches the newest release.
+
+**How do I turn the party check off?** Open the map, click *Party QoL* in the toolbar and switch *Party check* off. It then stays disabled until you switch it on again.
 
 **Where do I report a problem or suggest something?** Open an [issue](https://github.com/CrackedNamless/Aion2-QoL/issues/new/choose). Bug reports and feature requests each have a short form.
 
