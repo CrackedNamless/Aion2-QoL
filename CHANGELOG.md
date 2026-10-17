@@ -2,6 +2,20 @@
 
 Notes for each release also appear on the [Releases](https://github.com/CrackedNamless/Aion2-QoL/releases) page. Versions before 1.4.0 are listed there.
 
+## 1.6.0
+
+### Added
+- **Party check popup.** When you join a party a centered card lists every member with class, level, gear score, combat power and server. It closes by itself when the party ends or when you enter an expedition or a Transcendence.
+- **Party QoL menu.** A new *Party QoL* button on the map toolbar opens a card with a switch for the party check. When it is off the popup is disabled completely.
+- **Server column** in the party tab of the DPS meter.
+- **CPU and GPU load** (and GPU temperature on NVIDIA cards) as a second row on the timer strip, with a switch in its settings.
+- **New waypoint arrow.** A redesigned 3D arrow with a symmetric shape and the game's colour palette.
+- **Bottom-right buttons on the map:** check for updates, changelog, GitHub and issues.
+
+### Changed
+- The map toolbar is now Route, Layout, News, Party QoL and Help.
+- Guided tour extended to 23 steps (Party QoL and the corner buttons, new timer strip and party check texts) and the help card updated.
+
 ## 1.5.0
 
 ### Added
