@@ -2,6 +2,21 @@
 
 Notes for each release also appear on the [Releases](https://github.com/CrackedNamless/Aion2-QoL/releases) page. Versions before 1.4.0 are listed there.
 
+## 1.7.0
+
+### Added
+- **Pet farm list.** A new widget (`Ctrl+F5`) tracks the pets you are farming, with live soul progress, three stage bars and a +N flash whenever a soul lands. Pick pets with the "+" button by type (Cogni, Fera, Natura, Varian, Special) and by map. Maxed pets move to their own tab.
+- **Guided farming.** Click a pet to get a ping and the arrow, plus the nearest teleporter when it saves you a long run. On another map it tells you where to farm. When a pet reaches MAX the closest pet you are tracking is guided for you.
+- **Pets card.** Press `P` on the map to browse your whole pet collection with live souls and click a pet to find its spawns.
+- **Open world DPS.** A new "Open world: Everyone / Only me" setting, and the DPS rows now slide smoothly when the ranking changes.
+- Pet farm list in the guided tour (24 steps), in the widget editor and in the shortcut list.
+
+### Changed
+- The map toolbar's *Layout* button is now **Widgets**, and the toolbar reads Route, Widgets, News, Party QoL and Help. The pet buttons were removed from the toolbar: the Pets card stays on `P`.
+
+### Fixed
+- The arrow and minimap distance no longer follow the camera on PCs where the position reader had locked onto a camera object. Camera, spring arm and controller objects are now rejected.
+
 ## 1.6.0
 
 ### Added
