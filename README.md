@@ -177,6 +177,10 @@ Still stuck? Open an [issue](https://github.com/CrackedNamless/Aion2-QoL/issues/
 
 **Where do I report a problem or suggest something?** Open an [issue](https://github.com/CrackedNamless/Aion2-QoL/issues/new/choose). Bug reports and feature requests each have a short form.
 
+## License
+
+Aion2-QoL is free to use but closed source. See [LICENSE](LICENSE) for the terms.
+
 ---
 
 <div align="center"><sub>Made by <b>CrackedNamless</b></sub></div>
