@@ -2,6 +2,18 @@
 
 Notes for each release also appear on the [Releases](https://github.com/CrackedNamless/Aion2-QoL/releases) page. Versions before 1.4.0 are listed there.
 
+## 1.7.2
+
+### Added
+- **Keybinds.** A new *Keybinds* button on the map toolbar lists every shortcut. Click one, press the new keys and it is rebound; a circular arrow puts it back to the default and *Reset all* restores everything. Shortcuts that work in the game need Ctrl or Shift so they never fire while you type, and a key taken from another action unbinds that action with a note.
+
+### Changed
+- The map now opens with **Right Shift + M** instead of Right Shift alone (change it in Keybinds). The help, tooltips, tour and widget editor show your current keys.
+- The pet farm list is more compact: rows are smaller, at most 5 are visible and the list scrolls when you track more.
+
+### Fixed
+- **Pet banner shown by mistake.** The "go back to the login screen" notice no longer appears when your saved pet data was already loaded at start.
+
 ## 1.7.1
 
 ### Fixed
