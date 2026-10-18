@@ -27,9 +27,12 @@
 
 ## What's new
 
-**1.7.1**
+**1.7.2**
 
-- **Pets not loaded after an update.** The game only sends your pet collection when you log in, so an app started or updated mid-session had nothing to show. The pet farm list and the Pets card now detect this and tell you to go back to the login screen and enter your character again; once loaded, your pets are saved for the next start.
+- **Keybinds.** A new *Keybinds* button on the map toolbar lists every shortcut. Click one, press the new keys and it is rebound; a circular arrow puts it back to the default and *Reset all* restores everything. Shortcuts that work in the game need Ctrl or Shift so they never fire while you type, and a key taken from another action unbinds that action with a note.
+- The map now opens with **Right Shift + M** instead of Right Shift alone (change it in Keybinds). The help, tooltips, tour and widget editor show your current keys.
+- The pet farm list is more compact: rows are smaller, at most 5 are visible and the list scrolls when you track more.
+- **Pet banner shown by mistake.** The "go back to the login screen" notice no longer appears when your saved pet data was already loaded at start.
 
 Full list in the [changelog](CHANGELOG.md).
 
@@ -37,7 +40,7 @@ Full list in the [changelog](CHANGELOG.md).
 
 | | |
 |---|---|
-| **Interactive map** | Altgard, Reshanta and Verteron with thousands of markers: bosses, named monsters, dungeons, portals, merchants, quests, gathering points and pets. Open it in game with <kbd>Right Shift</kbd>. |
+| **Interactive map** | Altgard, Reshanta and Verteron with thousands of markers: bosses, named monsters, dungeons, portals, merchants, quests, gathering points and pets. Open it in game with <kbd>Right Shift</kbd>+<kbd>M</kbd> (every shortcut can be changed in the Keybinds card). |
 | **Filters and progress** | Grouped categories with counters. Mark markers as found, hide what you finished, and keep your progress between sessions. |
 | **Quick search and item finder** | <kbd>Ctrl</kbd>+<kbd>F</kbd> finds a boss, named monster, dungeon, portal, merchant, quest, pet or **item** on the map you are on. Click a result: the spot is pinged and an on-screen arrow guides you there, then both clear themselves when you arrive. |
 | **Routes** | Add stops with <kbd>R</kbd>, open the planner with <kbd>O</kbd>, or let auto-route chain gathering points, feathers or cubes by distance. Routes can be saved and reused. |
@@ -48,6 +51,7 @@ Full list in the [changelog](CHANGELOG.md).
 | **Hidden Cube finder** | <kbd>Ctrl</kbd>+<kbd>F9</kbd> points the waypoint arrow at the nearest Hidden Cube around you (about 100 m). |
 | **Minimap and waypoint arrow** | A live minimap in the corner and a redesigned 3D arrow that points at your current target, with distance and height difference. |
 | **Pet farm list** | <kbd>Ctrl</kbd>+<kbd>F5</kbd> shows the pets you are farming with live souls. Pick them by type and map, click one for a ping, the arrow and the nearest teleporter, and the next closest pet is guided when one is maxed. |
+| **Keybinds** | The map's *Keybinds* button lists every shortcut. Click one, press the new keys and it is rebound; a circular arrow restores the default. The map opens with <kbd>Right Shift</kbd>+<kbd>M</kbd> by default. |
 | **Widgets** | The map's *Widgets* button lets you move every widget on a grid with magnetic centre lines, switch each one on or off, and save. Click-through mode keeps the overlay out of your way. |
 | **Game news** | Patch notes, events and maintenance without leaving the game, with how long ago each was posted. |
 | **Map shortcuts** | Update, changelog, GitHub and issues buttons sit at the bottom right of the map. |
@@ -89,15 +93,15 @@ Full list in the [changelog](CHANGELOG.md).
 </tr>
 <tr>
 <td width="50%"><img src="docs/16_widgets.png" alt="Widgets"><br><sub><b>Widgets</b>: place every widget.</sub></td>
-<td width="50%"><img src="docs/17_tour.png" alt="Guided tour"><br><sub><b>Guided tour</b> on first run.</sub></td>
+<td width="50%"><img src="docs/17_keybinds.png" alt="Keybinds"><br><sub><b>Keybinds</b>: change every shortcut.</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="docs/19_help.png" alt="Built-in help"><br><sub><b>Built-in help</b> on the map.</sub></td>
-<td width="50%"><img src="docs/20_install.png" alt="Install"><br><sub><b>One installer</b>, always the latest version.</sub></td>
+<td width="50%"><img src="docs/18_tour.png" alt="Guided tour"><br><sub><b>Guided tour</b> on first run.</sub></td>
+<td width="50%"><img src="docs/20_help.png" alt="Built-in help"><br><sub><b>Built-in help</b> on the map.</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="docs/21_autostart.png" alt="Automatic start"><br><sub><b>Starts by itself</b> when you play.</sub></td>
-<td width="50%"></td>
+<td width="50%"><img src="docs/21_install.png" alt="Install"><br><sub><b>One installer</b>, always the latest version.</sub></td>
+<td width="50%"><img src="docs/22_autostart.png" alt="Automatic start"><br><sub><b>Starts by itself</b> when you play.</sub></td>
 </tr>
 </table>
 
@@ -110,7 +114,7 @@ Full list in the [changelog](CHANGELOG.md).
 1. Download **Aion2-QoL-Setup.exe** with the button above and run it.
 2. The installer downloads the **latest release** from GitHub, checks its digital signature and installs it. It is a small file because it always fetches the newest version, so this is the only installer you will ever need. The first install downloads about 190 MB (maps and icons).
 3. It installs [Npcap](https://npcap.com) for the DPS meter if you do not have it, and sets Aion2-QoL to **start by itself** with Windows. It runs silently in the system tray and picks up AION 2 as soon as the game opens, so there is nothing to launch before you play.
-4. Start AION 2 and press <kbd>Right Shift</kbd>. A guided tour of the map, party check, timers and DPS meter opens the first time (replay it from <kbd>F1</kbd>).
+4. Start AION 2 and press <kbd>Right Shift</kbd>+<kbd>M</kbd>. A guided tour of the map, party check, timers and DPS meter opens the first time (replay it from <kbd>F1</kbd>).
 
 **Requirements:** Windows 10 or 11 (64-bit), AION 2 running in borderless or windowed mode so the overlay can draw above it.
 
@@ -118,11 +122,11 @@ Full list in the [changelog](CHANGELOG.md).
 
 ## Shortcuts
 
-Global hotkeys work in game. Map keys work while the map is open, and <kbd>F1</kbd> on the map shows this list.
+Global hotkeys work in game. Map keys work while the map is open, and <kbd>F1</kbd> on the map shows this list. All of them can be rebound from the *Keybinds* button on the map toolbar.
 
 | Key | Action | | Key | Action |
 |---|---|---|---|---|
-| <kbd>Right Shift</kbd> | Open or close the map | | <kbd>Scroll</kbd> | Zoom |
+| <kbd>Right Shift</kbd>+<kbd>M</kbd> | Open or close the map | | <kbd>Scroll</kbd> | Zoom |
 | <kbd>Ctrl</kbd>+<kbd>F</kbd> | Quick search and item finder | | <kbd>Drag</kbd> | Pan the map |
 | <kbd>Ctrl</kbd>+<kbd>F5</kbd> | Pet farm list | | <kbd>Click</kbd> | Select a marker |
 | <kbd>Ctrl</kbd>+<kbd>F6</kbd> | Minimap | | <kbd>P</kbd> | Pets card |
@@ -134,7 +138,7 @@ Global hotkeys work in game. Map keys work while the map is open, and <kbd>F1</k
 | <kbd>Tab</kbd> | Next zone | | <kbd>N</kbd> | News |
 | <kbd>B</kbd> | Side panel | | Right-click | Fit the map to the screen |
 
-<div align="center"><img src="docs/18_hotkeys.png" alt="Shortcuts" width="80%"></div>
+<div align="center"><img src="docs/19_hotkeys.png" alt="Shortcuts" width="80%"></div>
 
 ## Updates
 
@@ -155,7 +159,7 @@ Aion2-QoL is a fan-made tool and is **not affiliated with NCSOFT**. AION is a tr
 
 | Problem | What to do |
 |---|---|
-| The overlay does not appear | Run AION 2 in borderless or windowed mode, then press <kbd>Right Shift</kbd>. Check that the Aion2-QoL icon is in the system tray. |
+| The overlay does not appear | Run AION 2 in borderless or windowed mode, then press <kbd>Right Shift</kbd>+<kbd>M</kbd>. Check that the Aion2-QoL icon is in the system tray. |
 | The DPS meter shows nothing | Make sure Npcap is installed (the installer offers it) and that you are in a fight. Press <kbd>Ctrl</kbd>+<kbd>F7</kbd> to toggle it. |
 | The overlay blocks my mouse | Press <kbd>Ctrl</kbd>+<kbd>F10</kbd> for click-through mode. |
 | A widget is in the wrong place | Open the map, press *Widgets*, drag it where you want, then Save. |
