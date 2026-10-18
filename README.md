@@ -27,12 +27,11 @@
 
 ## What's new
 
-**1.7.2**
+**1.7.3**
 
-- **Keybinds.** A new *Keybinds* button on the map toolbar lists every shortcut. Click one, press the new keys and it is rebound; a circular arrow puts it back to the default and *Reset all* restores everything. Shortcuts that work in the game need Ctrl or Shift so they never fire while you type, and a key taken from another action unbinds that action with a note.
-- The map now opens with **Right Shift + M** instead of Right Shift alone (change it in Keybinds). The help, tooltips, tour and widget editor show your current keys.
-- The pet farm list is more compact: rows are smaller, at most 5 are visible and the list scrolls when you track more.
-- **Pet banner shown by mistake.** The "go back to the login screen" notice no longer appears when your saved pet data was already loaded at start.
+- **Feathers are marked as found by themselves.** Every Empyrean feather you collect is ticked on the map the moment you pick it up, and the feathers you had already collected are ticked as the game loads them around you (about 100 m), so you no longer have to mark them by hand. Feathers you have not collected are never marked.
+- The "found" button now appears only on Empyrean feathers, and *Hide found* is on by default.
+- The pet farm list is hidden outside the open-world maps (dungeons, instances), where it has nothing to show.
 
 Full list in the [changelog](CHANGELOG.md).
 
