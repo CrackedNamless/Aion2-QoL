@@ -2,6 +2,26 @@
 
 Notes for each release also appear on the [Releases](https://github.com/CrackedNamless/Aion2-QoL/releases) page. Versions before 1.4.0 are listed there.
 
+## 1.8.0
+
+### Added
+- **Routes rebuilt from scratch.** Every stop is Pending, Done or Skipped, and you can skip a stop, go back, re-plan, reverse the route or jump to any stop. A *Repeat* switch loops the route. The *Build* tab lets you choose Gathering, Feathers or Cubes and tick exactly which resources to include, and a *Saved* tab keeps your routes. While a route is running the top chip shows the progress, the distance and Skip / Pause.
+- **Hidden Cube detour.** With the new *Cube detour* switch, a Hidden Cube near your route becomes the target until you collect it. <kbd>Ctrl</kbd>+<kbd>F11</kbd> skips a stop or ignores the cube.
+- **First-run setup.** The first time the map opens you choose your map shortcut in a short popup, and the guided tour starts right after it.
+- **Menus hide the overlay in both control modes.** The HUD, timers and DPS meter now hide whenever a game window or menu is open, in the AION 1 and the AION 2 control modes. It is on by default, so nothing needs to be switched when you change mode.
+- **Heights read from the game.** The app now reads the exact position of the gathering nodes the game has loaded around you and uses it as the height of the markers they sit on, so markers you never walked over get a correct height. These heights are also shared with the online table and replace wrong values there.
+- **Self-updating after a game patch.** The camera angle, the node-type id and the node position layout are found again by the app on its own, so the arrow, the Hidden Cube finder and the feather detection keep working after most patches without a new version.
+- **Crash log.** If the program ever stops unexpectedly it writes a short report (`crash.log`) next to its settings, so the cause can be found and fixed.
+
+### Changed
+- Any single Shift or Ctrl key can now be bound to a shortcut on its own, for example <kbd>Right Shift</kbd>.
+- The route arrival radius is 5.5 m in 3D when the height is known, so the next stop starts as soon as you are really there.
+- **Quick search and item finder removed for now.** <kbd>Ctrl</kbd>+<kbd>F</kbd> no longer opens the search card: it was not reliable enough and will come back rebuilt from scratch. The News and Pets cards keep their own search box.
+
+### Fixed
+- Menus that did not hide the overlay in some game windows.
+- Wrong marker heights (too low, from other players' hovering visits) no longer stay in the online table once a player reads the real height from the node.
+
 ## 1.7.4
 
 ### Fixed
