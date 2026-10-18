@@ -2,6 +2,11 @@
 
 Notes for each release also appear on the [Releases](https://github.com/CrackedNamless/Aion2-QoL/releases) page. Versions before 1.4.0 are listed there.
 
+## 1.7.1
+
+### Fixed
+- **Pets not loaded after an update.** The game only sends your pet collection when you log in, so an app started or updated mid-session had nothing to show. The pet farm list and the Pets card now detect this and tell you to go back to the login screen and enter your character again; once loaded, your pets are saved for the next start.
+
 ## 1.7.0
 
 ### Added
