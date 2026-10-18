@@ -29,7 +29,7 @@
 
 **1.7.1**
 
-
+- **Pets not loaded after an update.** The game only sends your pet collection when you log in, so an app started or updated mid-session had nothing to show. The pet farm list and the Pets card now detect this and tell you to go back to the login screen and enter your character again; once loaded, your pets are saved for the next start.
 
 Full list in the [changelog](CHANGELOG.md).
 
