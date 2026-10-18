@@ -2,6 +2,11 @@
 
 Notes for each release also appear on the [Releases](https://github.com/CrackedNamless/Aion2-QoL/releases) page. Versions before 1.4.0 are listed there.
 
+## 1.7.4
+
+### Fixed
+- **Collected feathers are now marked on every map.** In 1.7.3 the feathers you had already collected were only recognized on Altgard. The app now reads them on Reshanta and Verteron too, and works out each map's own collected/uncollected markers by itself.
+
 ## 1.7.3
 
 ### Added
