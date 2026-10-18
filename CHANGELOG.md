@@ -2,6 +2,15 @@
 
 Notes for each release also appear on the [Releases](https://github.com/CrackedNamless/Aion2-QoL/releases) page. Versions before 1.4.0 are listed there.
 
+## 1.7.3
+
+### Added
+- **Feathers are marked as found by themselves.** Every Empyrean feather you collect is ticked on the map the moment you pick it up, and the feathers you had already collected are ticked as the game loads them around you (about 100 m), so you no longer have to mark them by hand. Feathers you have not collected are never marked.
+
+### Changed
+- The "found" button now appears only on Empyrean feathers, and *Hide found* is on by default.
+- The pet farm list is hidden outside the open-world maps (dungeons, instances), where it has nothing to show.
+
 ## 1.7.2
 
 ### Added
