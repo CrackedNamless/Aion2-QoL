@@ -27,11 +27,9 @@
 
 ## What's new
 
-**1.7.3**
+**1.7.4**
 
-- **Feathers are marked as found by themselves.** Every Empyrean feather you collect is ticked on the map the moment you pick it up, and the feathers you had already collected are ticked as the game loads them around you (about 100 m), so you no longer have to mark them by hand. Feathers you have not collected are never marked.
-- The "found" button now appears only on Empyrean feathers, and *Hide found* is on by default.
-- The pet farm list is hidden outside the open-world maps (dungeons, instances), where it has nothing to show.
+- **Collected feathers are now marked on every map.** In 1.7.3 the feathers you had already collected were only recognized on Altgard. The app now reads them on Reshanta and Verteron too, and works out each map's own collected/uncollected markers by itself.
 
 Full list in the [changelog](CHANGELOG.md).
 
