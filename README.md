@@ -27,14 +27,9 @@
 
 ## What's new
 
-**1.7.0**
+**1.7.1**
 
-- **Pet farm list.** A new widget (`Ctrl+F5`) tracks the pets you are farming, with live soul progress, three stage bars and a +N flash whenever a soul lands. Pick pets with the "+" button by type (Cogni, Fera, Natura, Varian, Special) and by map. Maxed pets move to their own tab.
-- **Guided farming.** Click a pet to get a ping and the arrow, plus the nearest teleporter when it saves you a long run. On another map it tells you where to farm. When a pet reaches MAX the closest pet you are tracking is guided for you.
-- **Pets card.** Press `P` on the map to browse your whole pet collection with live souls and click a pet to find its spawns.
-- **Open world DPS.** A new "Open world: Everyone / Only me" setting, and the DPS rows now slide smoothly when the ranking changes.
-- Pet farm list in the guided tour (24 steps), in the widget editor and in the shortcut list.
-- The map toolbar's *Layout* button is now **Widgets**, and the toolbar reads Route, Widgets, News, Party QoL and Help. The pet buttons were removed from the toolbar: the Pets card stays on `P`.
+
 
 Full list in the [changelog](CHANGELOG.md).
 
