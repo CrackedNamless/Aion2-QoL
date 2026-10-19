@@ -2,6 +2,18 @@
 
 Notes for each release also appear on the [Releases](https://github.com/CrackedNamless/Aion2-QoL/releases) page. Versions before 1.4.0 are listed there.
 
+## 1.8.1
+
+### Added
+- **Send log button.** The bottom-right button bar of the map has a new button that sends your session log to the developer, to help find bugs. Your home folder, computer name and character name are removed before it is sent. You can send one log every 5 minutes.
+- **Hidden Cube finder in the tour.** The guided tour has a new animated step showing how the Hidden Cube finder works (25 steps now).
+
+### Changed
+- **The first-run tour is mandatory.** It can no longer be skipped the first time. You can replay it any time from Help (<kbd>F1</kbd>), and the replay can be skipped.
+
+### Fixed
+- Widgets blinking when the map was opened or closed, and menus that did not hide the overlay right after the map was closed.
+
 ## 1.8.0
 
 ### Added
