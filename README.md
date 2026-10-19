@@ -33,12 +33,9 @@
 
 ## What's new
 
-**1.8.1**
+**1.8.2**
 
-- **Send log button.** The bottom-right button bar of the map has a new button that sends your session log to the developer, to help find bugs. Your home folder, computer name and character name are removed before it is sent. You can send one log every 5 minutes.
-- **Hidden Cube finder in the tour.** The guided tour has a new animated step showing how the Hidden Cube finder works (25 steps now).
-- **The first-run tour is mandatory.** It can no longer be skipped the first time. You can replay it any time from Help (<kbd>F1</kbd>), and the replay can be skipped.
-- Widgets blinking when the map was opened or closed, and menus that did not hide the overlay right after the map was closed.
+- **Menus did not hide the overlay after the latest game patch.** The app now finds the game's UI system on its own from the player, so the HUD, timers and DPS meter hide again when a game window or menu is open.
 
 Full list in the [changelog](CHANGELOG.md).
 
