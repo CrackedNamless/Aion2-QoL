@@ -1,12 +1,12 @@
 <div align="center">
 
-<img src="docs/hidden-cube-finder.gif" alt="Hidden Cube Finder: a waypoint arrow and a minimap lead you to the nearest Hidden Cube" width="100%">
-
-<br>
-
 <img src="docs/banner.png" alt="Aion2-QoL" width="100%">
 
 <br><br>
+
+<img src="docs/Hidden-Cube-Finder.gif" alt="Hidden Cube Finder: a waypoint arrow and a minimap lead you to the nearest Hidden Cube" width="100%">
+
+<br>
 
 <a href="https://github.com/CrackedNamless/Aion2-QoL/releases/latest/download/Aion2-QoL-Setup.exe">
   <img src="docs/download.png" alt="Download installer" width="420">
