@@ -2,6 +2,11 @@
 
 Notes for each release also appear on the [Releases](https://github.com/CrackedNamless/Aion2-QoL/releases) page. Versions before 1.4.0 are listed there.
 
+## 1.8.2
+
+### Fixed
+- **Menus did not hide the overlay after the latest game patch.** The app now finds the game's UI system on its own from the player, so the HUD, timers and DPS meter hide again when a game window or menu is open.
+
 ## 1.8.1
 
 ### Added
