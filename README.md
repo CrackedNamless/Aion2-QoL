@@ -33,9 +33,10 @@
 
 ## What's new
 
-**1.8.2**
+**1.8.3**
 
-- **Menus did not hide the overlay after the latest game patch.** The app now finds the game's UI system on its own from the player, so the HUD, timers and DPS meter hide again when a game window or menu is open.
+- **Pet spots on Reshanta.** The map now shows where to farm pet souls on Reshanta: Karnif, Skama, Coradon, Slink, Young Slink, Klaw, Kalgolem, Agrint, Zelophi, Nepenthes, Swarm and Slime. They work with the pet farm list, the map filter and the guide arrow like the pets of Verteron and Altgard. Pets whose monsters we cannot match with certainty are not shown yet.
+- **Reshanta showed every pet as "all maxed".** The pet picker said "all maxed" for any type with no known spots on the chosen map. It now says "no spots yet", and "all maxed" only appears when the pets really are finished.
 
 Full list in the [changelog](CHANGELOG.md).
 
