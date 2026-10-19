@@ -1,12 +1,14 @@
 <div align="center">
 
+<img src="docs/hidden_cube_finder.gif" alt="Hidden Cube Finder: a waypoint arrow and a minimap lead you to the nearest Hidden Cube" width="100%">
+
+**Hidden Cube Finder.** Press <kbd>Ctrl</kbd>+<kbd>F9</kbd> and the arrow points at the nearest Hidden Cube around you, with its distance and height.
+
+<br>
+
 <img src="docs/banner.png" alt="Aion2-QoL" width="100%">
 
 <br><br>
-
-<img src="docs/Hidden-Cube-Finder.gif" alt="Hidden Cube Finder: a waypoint arrow and a minimap lead you to the nearest Hidden Cube" width="100%">
-
-<br>
 
 <a href="https://github.com/CrackedNamless/Aion2-QoL/releases/latest/download/Aion2-QoL-Setup.exe">
   <img src="docs/download.png" alt="Download installer" width="420">
@@ -31,20 +33,12 @@
 
 ## What's new
 
-**1.8.0**
+**1.8.1**
 
-- **Routes rebuilt from scratch.** Every stop is Pending, Done or Skipped, and you can skip a stop, go back, re-plan, reverse the route or jump to any stop. A *Repeat* switch loops the route. The *Build* tab lets you choose Gathering, Feathers or Cubes and tick exactly which resources to include, and a *Saved* tab keeps your routes. While a route is running the top chip shows the progress, the distance and Skip / Pause.
-- **Hidden Cube detour.** With the new *Cube detour* switch, a Hidden Cube near your route becomes the target until you collect it. <kbd>Ctrl</kbd>+<kbd>F11</kbd> skips a stop or ignores the cube.
-- **First-run setup.** The first time the map opens you choose your map shortcut in a short popup, and the guided tour starts right after it.
-- **Menus hide the overlay in both control modes.** The HUD, timers and DPS meter now hide whenever a game window or menu is open, in the AION 1 and the AION 2 control modes. It is on by default, so nothing needs to be switched when you change mode.
-- **Heights read from the game.** The app now reads the exact position of the gathering nodes the game has loaded around you and uses it as the height of the markers they sit on, so markers you never walked over get a correct height. These heights are also shared with the online table and replace wrong values there.
-- **Self-updating after a game patch.** The camera angle, the node-type id and the node position layout are found again by the app on its own, so the arrow, the Hidden Cube finder and the feather detection keep working after most patches without a new version.
-- **Crash log.** If the program ever stops unexpectedly it writes a short report (`crash.log`) next to its settings, so the cause can be found and fixed.
-- Any single Shift or Ctrl key can now be bound to a shortcut on its own, for example <kbd>Right Shift</kbd>.
-- The route arrival radius is 5.5 m in 3D when the height is known, so the next stop starts as soon as you are really there.
-- **Quick search and item finder removed for now.** <kbd>Ctrl</kbd>+<kbd>F</kbd> no longer opens the search card: it was not reliable enough and will come back rebuilt from scratch. The News and Pets cards keep their own search box.
-- Menus that did not hide the overlay in some game windows.
-- Wrong marker heights (too low, from other players' hovering visits) no longer stay in the online table once a player reads the real height from the node.
+- **Send log button.** The bottom-right button bar of the map has a new button that sends your session log to the developer, to help find bugs. Your home folder, computer name and character name are removed before it is sent. You can send one log every 5 minutes.
+- **Hidden Cube finder in the tour.** The guided tour has a new animated step showing how the Hidden Cube finder works (25 steps now).
+- **The first-run tour is mandatory.** It can no longer be skipped the first time. You can replay it any time from Help (<kbd>F1</kbd>), and the replay can be skipped.
+- Widgets blinking when the map was opened or closed, and menus that did not hide the overlay right after the map was closed.
 
 Full list in the [changelog](CHANGELOG.md).
 
