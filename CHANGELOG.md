@@ -2,6 +2,14 @@
 
 Notes for each release also appear on the [Releases](https://github.com/CrackedNamless/Aion2-QoL/releases) page. Versions before 1.4.0 are listed there.
 
+## 1.8.3
+
+### Added
+- **Pet spots on Reshanta.** The map now shows where to farm pet souls on Reshanta: Karnif, Skama, Coradon, Slink, Young Slink, Klaw, Kalgolem, Agrint, Zelophi, Nepenthes, Swarm and Slime. They work with the pet farm list, the map filter and the guide arrow like the pets of Verteron and Altgard. Pets whose monsters we cannot match with certainty are not shown yet.
+
+### Fixed
+- **Reshanta showed every pet as "all maxed".** The pet picker said "all maxed" for any type with no known spots on the chosen map. It now says "no spots yet", and "all maxed" only appears when the pets really are finished.
+
 ## 1.8.2
 
 ### Fixed
