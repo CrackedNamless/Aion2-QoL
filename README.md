@@ -1,5 +1,11 @@
 <div align="center">
 
+<img src="docs/hidden_cube_finder.gif" alt="Hidden Cube Finder: a waypoint arrow and a minimap lead you to the nearest Hidden Cube" width="100%">
+
+**Hidden Cube Finder.** Press <kbd>Ctrl</kbd>+<kbd>F9</kbd> and the arrow points at the nearest Hidden Cube around you, with its distance and height.
+
+<br>
+
 <img src="docs/banner.png" alt="Aion2-QoL" width="100%">
 
 <br><br>
