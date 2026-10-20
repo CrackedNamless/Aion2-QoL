@@ -33,9 +33,18 @@
 
 ## What's new
 
-**1.8.4**
+**1.9.0**
 
-- **Menus hiding the overlay again after updates.** The menu reader no longer gets confused when the game sets a neighbouring flag next to the "menu open" bit, which made it lose its settings and hide the HUD, timers and DPS meter at random. It now ignores that bit and goes back to the known layout by itself.
+- **Works in every resolution and window mode.** The overlay now adapts to Full-Screen, Windowed and Borderless. Every widget (minimap, arrow, timers, DPS meter, pet farm list) shrinks with the game window and stays anchored where you placed it, even when you move or resize the window. Positions are saved relative to the game area, so they also adapt when you change resolution. Move them only from the Layout editor.
+- **Pet finder follows the Guide.** Click Guide on a pet and the app takes you to it, then keeps pointing at the nearest live monster of that pet until it is maxed or you pick another one. The arrow tracks the monster as it moves and drops it as soon as it dies. Ctrl+F5 hides the pet arrows as well.
+- **Guide opens the map on the pet.** The map zooms on the spot and shows the nearest Kibelisk teleporter.
+- **More pets.** 25 pets on Reshanta with corrected spots, extra pets on Verteron and Altgard confirmed by a second source, and 56 new portraits.
+- **New pet farm window.** Two columns with grouping, search, sorting and a detail view that lists where each pet lives.
+- The pet finder is no longer a separate toggle: it runs with the Guide.
+- **Menus hiding the overlay in every mode.** The menu reader is more robust after switching between Full-Screen, Windowed and Borderless, and after game patches.
+- **Mouse stuck on the app** after changing window mode: focus now goes back to the game.
+- **Overlay invisible in Full-Screen** because of the window stacking order.
+- **Small windows:** the UI now scales down much further instead of overflowing.
 
 Full list in the [changelog](CHANGELOG.md).
 
