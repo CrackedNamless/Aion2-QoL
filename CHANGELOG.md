@@ -2,6 +2,11 @@
 
 Notes for each release also appear on the [Releases](https://github.com/CrackedNamless/Aion2-QoL/releases) page. Versions before 1.4.0 are listed there.
 
+## 1.8.4
+
+### Fixed
+- **Menus hiding the overlay again after updates.** The menu reader no longer gets confused when the game sets a neighbouring flag next to the "menu open" bit, which made it lose its settings and hide the HUD, timers and DPS meter at random. It now ignores that bit and goes back to the known layout by itself.
+
 ## 1.8.3
 
 ### Added
