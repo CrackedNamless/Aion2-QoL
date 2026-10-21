@@ -2,6 +2,12 @@
 
 Notes for each release also appear on the [Releases](https://github.com/CrackedNamless/Aion2-QoL/releases) page. Versions before 1.4.0 are listed there.
 
+## 1.9.1
+
+### Fixed
+- **Hidden Cubes are marked again after the latest game update.** The game renumbered the cube node, so the cube finder and the cube detour on routes saw nothing. The app now recognises the new id, and when the game changes it again it learns it by itself from the cube spawn points on the map.
+- **Random restarts of the app and DPS meter resets.** The app could crash while reading the GPU temperature from the NVIDIA driver, which restarted it and cleared the DPS meter. A driver fault there now only turns the GPU temperature off.
+
 ## 1.9.0
 
 ### Added
