@@ -33,18 +33,10 @@
 
 ## What's new
 
-**1.9.0**
+**1.9.1**
 
-- **Works in every resolution and window mode.** The overlay now adapts to Full-Screen, Windowed and Borderless. Every widget (minimap, arrow, timers, DPS meter, pet farm list) shrinks with the game window and stays anchored where you placed it, even when you move or resize the window. Positions are saved relative to the game area, so they also adapt when you change resolution. Move them only from the Layout editor.
-- **Pet finder follows the Guide.** Click Guide on a pet and the app takes you to it, then keeps pointing at the nearest live monster of that pet until it is maxed or you pick another one. The arrow tracks the monster as it moves and drops it as soon as it dies. Ctrl+F5 hides the pet arrows as well.
-- **Guide opens the map on the pet.** The map zooms on the spot and shows the nearest Kibelisk teleporter.
-- **More pets.** 25 pets on Reshanta with corrected spots, extra pets on Verteron and Altgard confirmed by a second source, and 56 new portraits.
-- **New pet farm window.** Two columns with grouping, search, sorting and a detail view that lists where each pet lives.
-- The pet finder is no longer a separate toggle: it runs with the Guide.
-- **Menus hiding the overlay in every mode.** The menu reader is more robust after switching between Full-Screen, Windowed and Borderless, and after game patches.
-- **Mouse stuck on the app** after changing window mode: focus now goes back to the game.
-- **Overlay invisible in Full-Screen** because of the window stacking order.
-- **Small windows:** the UI now scales down much further instead of overflowing.
+- **Hidden Cubes are marked again after the latest game update.** The game renumbered the cube node, so the cube finder and the cube detour on routes saw nothing. The app now recognises the new id, and when the game changes it again it learns it by itself from the cube spawn points on the map.
+- **Random restarts of the app and DPS meter resets.** The app could crash while reading the GPU temperature from the NVIDIA driver, which restarted it and cleared the DPS meter. A driver fault there now only turns the GPU temperature off.
 
 Full list in the [changelog](CHANGELOG.md).
 
