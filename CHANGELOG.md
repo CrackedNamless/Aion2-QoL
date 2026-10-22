@@ -2,6 +2,25 @@
 
 Notes for each release also appear on the [Releases](https://github.com/CrackedNamless/Aion2-QoL/releases) page. Versions before 1.4.0 are listed there.
 
+## 1.9.2
+
+### Added
+- **Boss timers.** A new Bosses button on the map opens a card with the field bosses of every map, a live countdown, a flag to follow the ones you care about and a choice of when to be warned. Followed bosses also appear in a compact widget you can place anywhere from the Layout editor.
+- **Boss alerts.** A notification with the boss portrait and a sound tells you before a boss respawns and when it is up. You can pick the lead time, switch the sound off and send yourself a test alert.
+- **Automatic faction.** The app recognises your faction by itself, so you only see the bosses that matter to you.
+- **DPS meter: target health bar.** The current target's health is shown under the list with a smooth drain animation.
+- **DPS meter: status line.** Odyle Energy and your connection ping can be shown at the bottom of the meter.
+- **DPS meter: settings window.** Settings now open in a window of their own in the middle of the game, with sections, hints and an update-rate option. Opacity can go down to 0%.
+
+### Changed
+- **DPS meter buttons and layout** have a cleaner, more consistent look.
+- **Smaller, cleaner widget.** It is more compact, and when you anchor it near an edge, extra bosses stack in that direction and the widget returns to its spot when you remove them.
+- **The timer strip is tidier.** Timers that now live in the Bosses card are no longer repeated there.
+- **Faster, more reliable online features.** Shared data now reaches everyone sooner and the service is better prepared for a growing community.
+
+### Fixed
+- **Wrong "Spawned" status** on bosses that had not respawned yet.
+
 ## 1.9.1
 
 ### Fixed
