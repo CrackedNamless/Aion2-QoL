@@ -2,6 +2,16 @@
 
 Notes for each release also appear on the [Releases](https://github.com/CrackedNamless/Aion2-QoL/releases) page. Versions before 1.4.0 are listed there.
 
+## 1.9.3
+
+### Added
+- **Choose your alert sounds.** A new Sounds button on the map opens a card where you pick the sound of each alert from seven, hear it with one click, set the volume (Mute, 25, 50, 75 or 100%) and switch each alert on or off. Boss alerts and the Hidden Cube alert have their own sound, and the Hidden Cube one also plays during pet farming and routes. Thanks to **Kery0x** for suggesting audio alerts with a choice of sound.
+- **Timer strip opacity.** A slider in the timer settings fades the strip's background and outline from 100% down to 0%, like the DPS meter. The text gets a thin dark outline as it fades, so it stays readable over a bright game.
+
+### Changed
+- **A tidier map overlay.** The toolbar is grouped: Route, Bosses and News, then Widgets and Party QoL, then Sounds and Keybinds, then Help. The zone summary and the Hide found switch share one capsule, and the status line and the GitHub, Issues, Changelog, Send log and update buttons share one bar.
+- **The shortcut list in Help** follows the order of the keys.
+
 ## 1.9.2
 
 ### Added
