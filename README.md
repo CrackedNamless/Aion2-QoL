@@ -33,19 +33,12 @@
 
 ## What's new
 
-**1.9.2**
+**1.9.3**
 
-- **Boss timers.** A new Bosses button on the map opens a card with the field bosses of every map, a live countdown, a flag to follow the ones you care about and a choice of when to be warned. Followed bosses also appear in a compact widget you can place anywhere from the Layout editor.
-- **Boss alerts.** A notification with the boss portrait and a sound tells you before a boss respawns and when it is up. You can pick the lead time, switch the sound off and send yourself a test alert.
-- **Automatic faction.** The app recognises your faction by itself, so you only see the bosses that matter to you.
-- **DPS meter: target health bar.** The current target's health is shown under the list with a smooth drain animation.
-- **DPS meter: status line.** Odyle Energy and your connection ping can be shown at the bottom of the meter.
-- **DPS meter: settings window.** Settings now open in a window of their own in the middle of the game, with sections, hints and an update-rate option. Opacity can go down to 0%.
-- **DPS meter buttons and layout** have a cleaner, more consistent look.
-- **Smaller, cleaner widget.** It is more compact, and when you anchor it near an edge, extra bosses stack in that direction and the widget returns to its spot when you remove them.
-- **The timer strip is tidier.** Timers that now live in the Bosses card are no longer repeated there.
-- **Faster, more reliable online features.** Shared data now reaches everyone sooner and the service is better prepared for a growing community.
-- **Wrong "Spawned" status** on bosses that had not respawned yet.
+- **Choose your alert sounds.** A new Sounds button on the map opens a card where you pick the sound of each alert from seven, hear it with one click, set the volume (Mute, 25, 50, 75 or 100%) and switch each alert on or off. Boss alerts and the Hidden Cube alert have their own sound, and the Hidden Cube one also plays during pet farming and routes. Thanks to **Kery0x** for suggesting audio alerts with a choice of sound.
+- **Timer strip opacity.** A slider in the timer settings fades the strip's background and outline from 100% down to 0%, like the DPS meter. The text gets a thin dark outline as it fades, so it stays readable over a bright game.
+- **A tidier map overlay.** The toolbar is grouped: Route, Bosses and News, then Widgets and Party QoL, then Sounds and Keybinds, then Help. The zone summary and the Hide found switch share one capsule, and the status line and the GitHub, Issues, Changelog, Send log and update buttons share one bar.
+- **The shortcut list in Help** follows the order of the keys.
 
 Full list in the [changelog](CHANGELOG.md).
 
@@ -58,7 +51,8 @@ Full list in the [changelog](CHANGELOG.md).
 | **Routes** | Add stops with <kbd>R</kbd> or build a route from the resources, feathers or cubes you pick, with the shortest path. Skip, go back, re-plan or repeat it, detour to Hidden Cubes on the way, and save routes to reuse them. <kbd>Ctrl</kbd>+<kbd>F11</kbd> skips a stop. |
 | **Live DPS meter** | Damage per second, share and crit rate per player. Solo or party scope, top 5 plus your own rank, boss and overall views, dungeon run history (including Shattered Arkanis and Deus Research Base) and per-skill detail. A target health bar, Odyle Energy and ping sit under the list, and the settings open in a window of their own. |
 | **Boss timers** | The map's *Bosses* button (<kbd>K</kbd>, or <kbd>Ctrl</kbd>+<kbd>F12</kbd> in game) lists the field bosses of Altgard, Verteron and Reshanta with a live countdown shared between the players of your server. Flag a boss to follow it, get a notification with its portrait (and an optional sound) before it respawns, and keep followed bosses in a compact widget you can place anywhere. |
-| **Event timers** | Shugo, Dimensional Invasion, Rift, Siege, daily and weekly resets, plus FPS, ping, server time and an optional CPU / GPU load row. |
+| **Event timers** | Shugo, Dimensional Invasion, Rift, Siege, daily and weekly resets, plus FPS, ping, server time and an optional CPU / GPU load row. An opacity slider fades the strip down to almost invisible while the text stays readable. |
+| **Alert sounds** | The map's *Sounds* button lets you choose which of seven sounds each alert plays (boss alerts, Hidden Cube), set the volume and switch each alert on or off. |
 | **Party check** | A card opens when you join a party and lists every member with class, level, server, gear score and combat power. It closes by itself in expeditions and Transcendence dungeons. |
 | **Party QoL** | The map toolbar's *Party QoL* menu switches the party check on or off. When it is off the popup is disabled completely. |
 | **Hidden Cube finder** | <kbd>Ctrl</kbd>+<kbd>F9</kbd> points the waypoint arrow at the nearest Hidden Cube around you (about 100 m). |
@@ -109,12 +103,16 @@ Full list in the [changelog](CHANGELOG.md).
 <td width="50%"><img src="docs/17_keybinds.png" alt="Keybinds"><br><sub><b>Keybinds</b>: change every shortcut.</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="docs/18_tour.png" alt="Guided tour"><br><sub><b>Guided tour</b> on first run.</sub></td>
-<td width="50%"><img src="docs/20_help.png" alt="Built-in help"><br><sub><b>Built-in help</b> on the map.</sub></td>
+<td width="50%"><img src="docs/18_sounds.png" alt="Sounds"><br><sub><b>Sounds</b>: pick the sound of every alert.</sub></td>
+<td width="50%"><img src="docs/19_tour.png" alt="Guided tour"><br><sub><b>Guided tour</b> on first run.</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="docs/21_install.png" alt="Install"><br><sub><b>One installer</b>, always the latest version.</sub></td>
-<td width="50%"><img src="docs/22_autostart.png" alt="Automatic start"><br><sub><b>Starts by itself</b> when you play.</sub></td>
+<td width="50%"><img src="docs/21_help.png" alt="Built-in help"><br><sub><b>Built-in help</b> on the map.</sub></td>
+<td width="50%"><img src="docs/22_install.png" alt="Install"><br><sub><b>One installer</b>, always the latest version.</sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="docs/23_autostart.png" alt="Automatic start"><br><sub><b>Starts by itself</b> when you play.</sub></td>
+<td width="50%"></td>
 </tr>
 </table>
 
