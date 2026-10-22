@@ -21,7 +21,7 @@
 ![Platform](https://img.shields.io/badge/Windows-10%20%7C%2011-e3bd6e?style=for-the-badge&labelColor=161d2e)
 [![Issues](https://img.shields.io/github/issues/CrackedNamless/Aion2-QoL?style=for-the-badge&color=e3bd6e&labelColor=161d2e)](https://github.com/CrackedNamless/Aion2-QoL/issues)
 
-**A quality-of-life overlay for AION 2: interactive map, live DPS meter with party check, event timers, routes, pet farming and game news, one key away.**
+**A quality-of-life overlay for AION 2: interactive map, live DPS meter with party check, boss and event timers, routes, pet farming and game news, one key away.**
 
 </div>
 
@@ -33,10 +33,19 @@
 
 ## What's new
 
-**1.9.1**
+**1.9.2**
 
-- **Hidden Cubes are marked again after the latest game update.** The game renumbered the cube node, so the cube finder and the cube detour on routes saw nothing. The app now recognises the new id, and when the game changes it again it learns it by itself from the cube spawn points on the map.
-- **Random restarts of the app and DPS meter resets.** The app could crash while reading the GPU temperature from the NVIDIA driver, which restarted it and cleared the DPS meter. A driver fault there now only turns the GPU temperature off.
+- **Boss timers.** A new Bosses button on the map opens a card with the field bosses of every map, a live countdown, a flag to follow the ones you care about and a choice of when to be warned. Followed bosses also appear in a compact widget you can place anywhere from the Layout editor.
+- **Boss alerts.** A notification with the boss portrait and a sound tells you before a boss respawns and when it is up. You can pick the lead time, switch the sound off and send yourself a test alert.
+- **Automatic faction.** The app recognises your faction by itself, so you only see the bosses that matter to you.
+- **DPS meter: target health bar.** The current target's health is shown under the list with a smooth drain animation.
+- **DPS meter: status line.** Odyle Energy and your connection ping can be shown at the bottom of the meter.
+- **DPS meter: settings window.** Settings now open in a window of their own in the middle of the game, with sections, hints and an update-rate option. Opacity can go down to 0%.
+- **DPS meter buttons and layout** have a cleaner, more consistent look.
+- **Smaller, cleaner widget.** It is more compact, and when you anchor it near an edge, extra bosses stack in that direction and the widget returns to its spot when you remove them.
+- **The timer strip is tidier.** Timers that now live in the Bosses card are no longer repeated there.
+- **Faster, more reliable online features.** Shared data now reaches everyone sooner and the service is better prepared for a growing community.
+- **Wrong "Spawned" status** on bosses that had not respawned yet.
 
 Full list in the [changelog](CHANGELOG.md).
 
@@ -47,8 +56,9 @@ Full list in the [changelog](CHANGELOG.md).
 | **Interactive map** | Altgard, Reshanta and Verteron with thousands of markers: bosses, named monsters, dungeons, portals, merchants, quests, gathering points and pets. Open it in game with <kbd>Right Shift</kbd>+<kbd>M</kbd> (every shortcut can be changed in the Keybinds card). |
 | **Filters and progress** | Grouped categories with counters. Mark markers as found, hide what you finished, and keep your progress between sessions. |
 | **Routes** | Add stops with <kbd>R</kbd> or build a route from the resources, feathers or cubes you pick, with the shortest path. Skip, go back, re-plan or repeat it, detour to Hidden Cubes on the way, and save routes to reuse them. <kbd>Ctrl</kbd>+<kbd>F11</kbd> skips a stop. |
-| **Live DPS meter** | Damage per second, share and crit rate per player. Solo or party scope, top 5 plus your own rank, boss and overall views, dungeon run history (including Shattered Arkanis and Deus Research Base) and per-skill detail. |
-| **Event timers** | Shugo, Dimensional Invasion, Rift, Kaira, Siege, Nahma, daily and weekly resets, plus FPS, ping, server time and an optional CPU / GPU load row. |
+| **Live DPS meter** | Damage per second, share and crit rate per player. Solo or party scope, top 5 plus your own rank, boss and overall views, dungeon run history (including Shattered Arkanis and Deus Research Base) and per-skill detail. A target health bar, Odyle Energy and ping sit under the list, and the settings open in a window of their own. |
+| **Boss timers** | The map's *Bosses* button (<kbd>K</kbd>, or <kbd>Ctrl</kbd>+<kbd>F12</kbd> in game) lists the field bosses of Altgard, Verteron and Reshanta with a live countdown shared between the players of your server. Flag a boss to follow it, get a notification with its portrait (and an optional sound) before it respawns, and keep followed bosses in a compact widget you can place anywhere. |
+| **Event timers** | Shugo, Dimensional Invasion, Rift, Siege, daily and weekly resets, plus FPS, ping, server time and an optional CPU / GPU load row. |
 | **Party check** | A card opens when you join a party and lists every member with class, level, server, gear score and combat power. It closes by itself in expeditions and Transcendence dungeons. |
 | **Party QoL** | The map toolbar's *Party QoL* menu switches the party check on or off. When it is off the popup is disabled completely. |
 | **Hidden Cube finder** | <kbd>Ctrl</kbd>+<kbd>F9</kbd> points the waypoint arrow at the nearest Hidden Cube around you (about 100 m). |
@@ -79,28 +89,32 @@ Full list in the [changelog](CHANGELOG.md).
 <td width="50%"><img src="docs/07_news.png" alt="News"><br><sub><b>Game news</b> without alt-tabbing.</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="docs/08_dps.png" alt="DPS meter"><br><sub><b>Live DPS meter</b>.</sub></td>
-<td width="50%"><img src="docs/09_party.png" alt="Party check"><br><sub><b>Party check</b> before the dungeon.</sub></td>
+<td width="50%"><img src="docs/08_bosses.png" alt="Boss timers"><br><sub><b>Boss timers</b> shared by your server.</sub></td>
+<td width="50%"><img src="docs/09_bossalerts.png" alt="Boss alerts"><br><sub><b>Boss alerts</b> and the flagged-boss widget.</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="docs/10_timers.png" alt="Timers"><br><sub><b>Event timers</b> with CPU / GPU load.</sub></td>
-<td width="50%"><img src="docs/11_hud.png" alt="Minimap"><br><sub><b>Minimap</b> and waypoint arrow.</sub></td>
+<td width="50%"><img src="docs/10_dps.png" alt="DPS meter"><br><sub><b>Live DPS meter</b> with target health.</sub></td>
+<td width="50%"><img src="docs/11_party.png" alt="Party check"><br><sub><b>Party check</b> before the dungeon.</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="docs/12_arrow.png" alt="Waypoint arrow"><br><sub><b>New 3D arrow</b> with distance and height.</sub></td>
-<td width="50%"><img src="docs/13_petfarm.png" alt="Pet farm list"><br><sub><b>Pet farm list</b> with guided farming.</sub></td>
+<td width="50%"><img src="docs/12_timers.png" alt="Timers"><br><sub><b>Event timers</b> with CPU / GPU load.</sub></td>
+<td width="50%"><img src="docs/13_hud.png" alt="Minimap"><br><sub><b>Minimap</b> and waypoint arrow.</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="docs/14_widgets.png" alt="Widgets"><br><sub><b>Widgets</b>: place every widget.</sub></td>
-<td width="50%"><img src="docs/15_keybinds.png" alt="Keybinds"><br><sub><b>Keybinds</b>: change every shortcut.</sub></td>
+<td width="50%"><img src="docs/14_arrow.png" alt="Waypoint arrow"><br><sub><b>New 3D arrow</b> with distance and height.</sub></td>
+<td width="50%"><img src="docs/15_petfarm.png" alt="Pet farm list"><br><sub><b>Pet farm list</b> with guided farming.</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="docs/16_tour.png" alt="Guided tour"><br><sub><b>Guided tour</b> on first run.</sub></td>
-<td width="50%"><img src="docs/18_help.png" alt="Built-in help"><br><sub><b>Built-in help</b> on the map.</sub></td>
+<td width="50%"><img src="docs/16_widgets.png" alt="Widgets"><br><sub><b>Widgets</b>: place every widget.</sub></td>
+<td width="50%"><img src="docs/17_keybinds.png" alt="Keybinds"><br><sub><b>Keybinds</b>: change every shortcut.</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="docs/19_install.png" alt="Install"><br><sub><b>One installer</b>, always the latest version.</sub></td>
-<td width="50%"><img src="docs/20_autostart.png" alt="Automatic start"><br><sub><b>Starts by itself</b> when you play.</sub></td>
+<td width="50%"><img src="docs/18_tour.png" alt="Guided tour"><br><sub><b>Guided tour</b> on first run.</sub></td>
+<td width="50%"><img src="docs/20_help.png" alt="Built-in help"><br><sub><b>Built-in help</b> on the map.</sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="docs/21_install.png" alt="Install"><br><sub><b>One installer</b>, always the latest version.</sub></td>
+<td width="50%"><img src="docs/22_autostart.png" alt="Automatic start"><br><sub><b>Starts by itself</b> when you play.</sub></td>
 </tr>
 </table>
 
@@ -133,11 +147,12 @@ Global hotkeys work in game. Map keys work while the map is open, and <kbd>F1</k
 | <kbd>Ctrl</kbd>+<kbd>F8</kbd> | Event timers | | <kbd>H</kbd> | Hide found markers |
 | <kbd>Ctrl</kbd>+<kbd>F9</kbd> | Hidden Cube finder | | <kbd>G</kbd> | Guide arrow to the selection |
 | <kbd>Ctrl</kbd>+<kbd>F10</kbd> | Click-through mode | | <kbd>L</kbd> | Follow the player |
-| <kbd>F1</kbd> | Help and shortcuts | | <kbd>R</kbd> / <kbd>O</kbd> | Add route stop / route planner |
-| <kbd>Tab</kbd> | Next zone | | <kbd>N</kbd> | News |
+| <kbd>Ctrl</kbd>+<kbd>F12</kbd> | Boss timers | | <kbd>R</kbd> / <kbd>O</kbd> | Add route stop / route planner |
+| <kbd>F1</kbd> | Help and shortcuts | | <kbd>N</kbd> | News |
+| <kbd>Tab</kbd> | Next zone | | <kbd>K</kbd> | Bosses card |
 | <kbd>B</kbd> | Side panel | | Right-click | Fit the map to the screen |
 
-<div align="center"><img src="docs/17_hotkeys.png" alt="Shortcuts" width="80%"></div>
+<div align="center"><img src="docs/19_hotkeys.png" alt="Shortcuts" width="80%"></div>
 
 ## Updates
 
@@ -148,7 +163,7 @@ Aion2-QoL checks GitHub for a new release when it starts. If one exists it downl
 - **DPS meter:** reads your own network traffic through Npcap (packet capture). It does not touch the game process.
 - **Player position and minimap:** read from the game's memory in read-only mode. Nothing is injected into the game and no input is sent to it.
 - **Map, routes, news:** local data shipped with the program and refreshed through updates.
-- **Online heights:** optional and anonymous, crowd-sourced terrain heights used to place the player more precisely. No account, no personal data.
+- **Online heights and boss timers:** anonymous and crowd-sourced: terrain heights that place the player more precisely, and boss respawn times shared between players of the same server. No account, no personal data.
 - **Updates:** every package is checked against an ECDSA signature whose public key is built into the program, so a tampered update is rejected.
 - **Windows warnings:** the installer and the program are not signed with a paid certificate, so Windows may show a SmartScreen or "unknown publisher" prompt the first time. This is expected for a small independent project: choose *More info > Run anyway*.
 
