@@ -103,7 +103,7 @@ Full list in the [changelog](CHANGELOG.md).
 <td width="50%"><img src="docs/15_petfarm.png" alt="Pet farm list"><br><sub><b>Pet farm list</b> with guided farming.</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="docs/widgets_resize.gif" alt="Widgets: drag to move, scroll the mouse wheel to resize"><br><sub><b>Widgets</b>: place and resize every widget.</sub></td>
+<td width="50%"><img src="docs/16_widgets.png" alt="Widgets"><br><sub><b>Widgets</b>: place every widget.</sub></td>
 <td width="50%"><img src="docs/17_keybinds.png" alt="Keybinds"><br><sub><b>Keybinds</b>: change every shortcut.</sub></td>
 </tr>
 <tr>
@@ -116,7 +116,7 @@ Full list in the [changelog](CHANGELOG.md).
 </tr>
 <tr>
 <td width="50%"><img src="docs/23_autostart.png" alt="Automatic start"><br><sub><b>Starts by itself</b> when you play.</sub></td>
-<td width="50%"></td>
+<td width="50%"><img src="docs/widgets_resize.gif" alt="Widgets: drag to move, scroll the mouse wheel to resize"><br><sub><b>Resize widgets</b>: scroll the mouse wheel over one.</sub></td>
 </tr>
 </table>
 
