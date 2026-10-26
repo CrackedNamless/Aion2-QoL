@@ -71,12 +71,6 @@ Full list in the [changelog](CHANGELOG.md).
 | **Stays running** | Runs as administrator without a manual step, and restarts itself if it ever crashes while the game is still open. |
 | **Auto-update** | New versions are downloaded in the background and verified with a digital signature before they are applied. |
 
-### Move and resize your widgets
-
-<img src="docs/widgets_resize.gif" alt="Press Widgets on the map, drag a widget to move it and scroll the mouse wheel over it to resize it" width="100%">
-
-Idea and thanks to **Ennz729** for the resize feature.
-
 ## Screenshots
 
 <table>
@@ -109,7 +103,7 @@ Idea and thanks to **Ennz729** for the resize feature.
 <td width="50%"><img src="docs/15_petfarm.png" alt="Pet farm list"><br><sub><b>Pet farm list</b> with guided farming.</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="docs/16_widgets.png" alt="Widgets"><br><sub><b>Widgets</b>: place every widget.</sub></td>
+<td width="50%"><img src="docs/widgets_resize.gif" alt="Widgets: drag to move, scroll the mouse wheel to resize"><br><sub><b>Widgets</b>: place and resize every widget.</sub></td>
 <td width="50%"><img src="docs/17_keybinds.png" alt="Keybinds"><br><sub><b>Keybinds</b>: change every shortcut.</sub></td>
 </tr>
 <tr>
