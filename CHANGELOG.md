@@ -2,6 +2,22 @@
 
 Notes for each release also appear on the [Releases](https://github.com/CrackedNamless/Aion2-QoL/releases) page. Versions before 1.4.0 are listed there.
 
+## 1.9.4
+
+### Added
+- **Resize any widget with the mouse wheel.** In Widgets mode (the Widgets button on the map), put the mouse over the DPS meter, minimap, waypoint arrow, timer strip, pet list, boss widget or the map button and scroll to make it bigger or smaller. A label shows the size while you edit, the size is remembered across logins, and Reset layout brings back the defaults. Thanks to **Ennz729** for suggesting it.
+- **A how-to popup in Widgets mode** explains moving, resizing and saving each time you open it.
+- **Skip the NCSOFT intro.** A new tray option shortens the game's intro logo video so you reach the login screen faster. It is off by default, keeps a backup of the original file and re-applies itself after a game update.
+- **The tour explains moving and resizing** with a short animation, and **the first-run tour can be skipped** again with the Skip tour button or Esc.
+
+### Changed
+- **A flatter, cleaner look for every overlay:** DPS meter, timer strip, pet list, boss widget, minimap buttons, notifications, party check, settings windows and the Widgets editor now share one style.
+- **One opacity for the overlays.** A single setting fades the DPS meter, timer strip, pet list and boss widget together, down to almost invisible. The text gets a thin dark outline as it fades, so the DPS meter stays readable over a bright game.
+- **A more reliable start on some PCs.** The app finds the game's world data more reliably after the game finishes loading, so the world, Hidden Cubes and menu hiding work again where they were missing.
+
+### Fixed
+- **Empyrean feathers are marked again after the latest game update.** The game renumbered the feather nodes, so feathers you had already collected were no longer ticked off. The app uses the new ids and ignores outdated ones.
+
 ## 1.9.3
 
 ### Added
