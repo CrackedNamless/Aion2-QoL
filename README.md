@@ -33,12 +33,16 @@
 
 ## What's new
 
-**1.9.3**
+**1.9.4**
 
-- **Choose your alert sounds.** A new Sounds button on the map opens a card where you pick the sound of each alert from seven, hear it with one click, set the volume (Mute, 25, 50, 75 or 100%) and switch each alert on or off. Boss alerts and the Hidden Cube alert have their own sound, and the Hidden Cube one also plays during pet farming and routes. Thanks to **Kery0x** for suggesting audio alerts with a choice of sound.
-- **Timer strip opacity.** A slider in the timer settings fades the strip's background and outline from 100% down to 0%, like the DPS meter. The text gets a thin dark outline as it fades, so it stays readable over a bright game.
-- **A tidier map overlay.** The toolbar is grouped: Route, Bosses and News, then Widgets and Party QoL, then Sounds and Keybinds, then Help. The zone summary and the Hide found switch share one capsule, and the status line and the GitHub, Issues, Changelog, Send log and update buttons share one bar.
-- **The shortcut list in Help** follows the order of the keys.
+- **Resize any widget with the mouse wheel.** In Widgets mode (the Widgets button on the map), put the mouse over the DPS meter, minimap, waypoint arrow, timer strip, pet list, boss widget or the map button and scroll to make it bigger or smaller. A label shows the size while you edit, the size is remembered across logins, and Reset layout brings back the defaults. Thanks to **Ennz729** for suggesting it.
+- **A how-to popup in Widgets mode** explains moving, resizing and saving each time you open it.
+- **Skip the NCSOFT intro.** A new tray option shortens the game's intro logo video so you reach the login screen faster. It is off by default, keeps a backup of the original file and re-applies itself after a game update.
+- **The tour explains moving and resizing** with a short animation, and **the first-run tour can be skipped** again with the Skip tour button or Esc.
+- **A flatter, cleaner look for every overlay:** DPS meter, timer strip, pet list, boss widget, minimap buttons, notifications, party check, settings windows and the Widgets editor now share one style.
+- **One opacity for the overlays.** A single setting fades the DPS meter, timer strip, pet list and boss widget together, down to almost invisible. The text gets a thin dark outline as it fades, so the DPS meter stays readable over a bright game.
+- **A more reliable start on some PCs.** The app finds the game's world data more reliably after the game finishes loading, so the world, Hidden Cubes and menu hiding work again where they were missing.
+- **Empyrean feathers are marked again after the latest game update.** The game renumbered the feather nodes, so feathers you had already collected were no longer ticked off. The app uses the new ids and ignores outdated ones.
 
 Full list in the [changelog](CHANGELOG.md).
 
@@ -59,13 +63,19 @@ Full list in the [changelog](CHANGELOG.md).
 | **Minimap and waypoint arrow** | A live minimap in the corner and a redesigned 3D arrow that points at your current target, with distance and height difference. |
 | **Pet farm list** | <kbd>Ctrl</kbd>+<kbd>F5</kbd> shows the pets you are farming with live souls. Pick them by type and map, click one for a ping, the arrow and the nearest teleporter, and the next closest pet is guided when one is maxed. |
 | **Keybinds** | The map's *Keybinds* button lists every shortcut. Click one, press the new keys and it is rebound; a circular arrow restores the default. The map opens with <kbd>Right Shift</kbd>+<kbd>M</kbd> by default. |
-| **Widgets** | The map's *Widgets* button lets you move every widget on a grid with magnetic centre lines, switch each one on or off, and save. Click-through mode keeps the overlay out of your way. |
+| **Widgets** | The map's *Widgets* button lets you move every widget on a grid with magnetic centre lines, resize any of them with the mouse wheel, switch each one on or off, and save. Click-through mode keeps the overlay out of your way. |
 | **Game news** | Patch notes, events and maintenance without leaving the game, with how long ago each was posted. |
 | **Map shortcuts** | Update, changelog, GitHub and issues buttons sit at the bottom right of the map. |
 | **Map button** | A small round button with the app icon floats over the game: click it to open or close the map, drag it anywhere. It hides while a game menu is open. |
 | **Starts by itself** | Install it once. It starts with Windows, waits quietly in the tray and is ready the moment AION 2 opens. |
 | **Stays running** | Runs as administrator without a manual step, and restarts itself if it ever crashes while the game is still open. |
 | **Auto-update** | New versions are downloaded in the background and verified with a digital signature before they are applied. |
+
+### Move and resize your widgets
+
+<img src="docs/widgets_resize.gif" alt="Press Widgets on the map, drag a widget to move it and scroll the mouse wheel over it to resize it" width="100%">
+
+Idea and thanks to **Ennz729** for the resize feature.
 
 ## Screenshots
 
