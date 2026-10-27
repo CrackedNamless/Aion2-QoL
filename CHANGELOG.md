@@ -2,6 +2,16 @@
 
 Notes for each release also appear on the [Releases](https://github.com/CrackedNamless/Aion2-QoL/releases) page. Versions before 1.4.0 are listed there.
 
+## 1.9.5
+
+### Added
+- **Teleporter next to every boss.** The Bosses card and the boss widget show the nearest teleporter of each field boss with the number of its entry in the game's Complete List, and a click opens our map on it. Thanks to **Kery0x** for suggesting it.
+- **A teleport guide over the game's world map.** When you open the game's own map, a small panel lists the teleporters of your flagged bosses with their portraits, row numbers and live respawn timers, so you know which entry to click. It only appears on the world map, can be dragged anywhere, and resizes with the mouse wheel or its - / + buttons. Thanks to **Kery0x** for the boss ideas behind it.
+- **Choose which bosses the widget shows.** A new Show bosses setting limits it to all flagged bosses, or only those spawning within 15 or 30 minutes, 1 or 2 hours. Thanks to **Kery0x**.
+
+### Changed
+- **The map name and the teleporter are shown by default** in the boss card. Reshanta bosses have no teleporter, so none is shown for them.
+
 ## 1.9.4
 
 ### Added
