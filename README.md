@@ -33,16 +33,12 @@
 
 ## What's new
 
-**1.9.4**
+**1.9.5**
 
-- **Resize any widget with the mouse wheel.** In Widgets mode (the Widgets button on the map), put the mouse over the DPS meter, minimap, waypoint arrow, timer strip, pet list, boss widget or the map button and scroll to make it bigger or smaller. A label shows the size while you edit, the size is remembered across logins, and Reset layout brings back the defaults. Thanks to **Ennz729** for suggesting it.
-- **A how-to popup in Widgets mode** explains moving, resizing and saving each time you open it.
-- **Skip the NCSOFT intro.** A new tray option shortens the game's intro logo video so you reach the login screen faster. It is off by default, keeps a backup of the original file and re-applies itself after a game update.
-- **The tour explains moving and resizing** with a short animation, and **the first-run tour can be skipped** again with the Skip tour button or Esc.
-- **A flatter, cleaner look for every overlay:** DPS meter, timer strip, pet list, boss widget, minimap buttons, notifications, party check, settings windows and the Widgets editor now share one style.
-- **One opacity for the overlays.** A single setting fades the DPS meter, timer strip, pet list and boss widget together, down to almost invisible. The text gets a thin dark outline as it fades, so the DPS meter stays readable over a bright game.
-- **A more reliable start on some PCs.** The app finds the game's world data more reliably after the game finishes loading, so the world, Hidden Cubes and menu hiding work again where they were missing.
-- **Empyrean feathers are marked again after the latest game update.** The game renumbered the feather nodes, so feathers you had already collected were no longer ticked off. The app uses the new ids and ignores outdated ones.
+- **Teleporter next to every boss.** The Bosses card and the boss widget show the nearest teleporter of each field boss with the number of its entry in the game's Complete List, and a click opens our map on it. Thanks to **Kery0x** for suggesting it.
+- **A teleport guide over the game's world map.** When you open the game's own map, a small panel lists the teleporters of your flagged bosses with their portraits, row numbers and live respawn timers, so you know which entry to click. It only appears on the world map, can be dragged anywhere, and resizes with the mouse wheel or its - / + buttons. Thanks to **Kery0x** for the boss ideas behind it.
+- **Choose which bosses the widget shows.** A new Show bosses setting limits it to all flagged bosses, or only those spawning within 15 or 30 minutes, 1 or 2 hours. Thanks to **Kery0x**.
+- **The map name and the teleporter are shown by default** in the boss card. Reshanta bosses have no teleporter, so none is shown for them.
 
 Full list in the [changelog](CHANGELOG.md).
 
@@ -55,6 +51,7 @@ Full list in the [changelog](CHANGELOG.md).
 | **Routes** | Add stops with <kbd>R</kbd> or build a route from the resources, feathers or cubes you pick, with the shortest path. Skip, go back, re-plan or repeat it, detour to Hidden Cubes on the way, and save routes to reuse them. <kbd>Ctrl</kbd>+<kbd>F11</kbd> skips a stop. |
 | **Live DPS meter** | Damage per second, share and crit rate per player. Solo or party scope, top 5 plus your own rank, boss and overall views, dungeon run history (including Shattered Arkanis and Deus Research Base) and per-skill detail. A target health bar, Odyle Energy and ping sit under the list, and the settings open in a window of their own. |
 | **Boss timers** | The map's *Bosses* button (<kbd>K</kbd>, or <kbd>Ctrl</kbd>+<kbd>F12</kbd> in game) lists the field bosses of Altgard, Verteron and Reshanta with a live countdown shared between the players of your server. Flag a boss to follow it, get a notification with its portrait (and an optional sound) before it respawns, and keep followed bosses in a compact widget you can place anywhere. |
+| **Teleport guide** | Every boss in the Bosses card shows its nearest teleporter, with the number of its entry in the game's *Complete List*, and a click opens our map on it. Open the game's own world map and a small panel lists the teleporters of your flagged bosses with their portraits, numbers and live respawn timers, so you know exactly which row to click. It only appears on the world map, can be dragged, and resizes with the mouse wheel or its - / + buttons. |
 | **Event timers** | Shugo, Dimensional Invasion, Rift, Siege, daily and weekly resets, plus FPS, ping, server time and an optional CPU / GPU load row. An opacity slider fades the strip down to almost invisible while the text stays readable. |
 | **Alert sounds** | The map's *Sounds* button lets you choose which of seven sounds each alert plays (boss alerts, Hidden Cube), set the volume and switch each alert on or off. |
 | **Party check** | A card opens when you join a party and lists every member with class, level, server, gear score and combat power. It closes by itself in expeditions and Transcendence dungeons. |
@@ -91,31 +88,34 @@ Full list in the [changelog](CHANGELOG.md).
 <td width="50%"><img src="docs/09_bossalerts.png" alt="Boss alerts"><br><sub><b>Boss alerts</b> and the flagged-boss widget.</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="docs/10_dps.png" alt="DPS meter"><br><sub><b>Live DPS meter</b> with target health.</sub></td>
-<td width="50%"><img src="docs/11_party.png" alt="Party check"><br><sub><b>Party check</b> before the dungeon.</sub></td>
+<td width="50%"><img src="docs/10_maphint.png" alt="Teleport guide"><br><sub><b>Teleport guide</b> over the game map.</sub></td>
+<td width="50%"><img src="docs/11_dps.png" alt="DPS meter"><br><sub><b>Live DPS meter</b> with target health.</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="docs/12_timers.png" alt="Timers"><br><sub><b>Event timers</b> with CPU / GPU load.</sub></td>
-<td width="50%"><img src="docs/13_hud.png" alt="Minimap"><br><sub><b>Minimap</b> and waypoint arrow.</sub></td>
+<td width="50%"><img src="docs/12_party.png" alt="Party check"><br><sub><b>Party check</b> before the dungeon.</sub></td>
+<td width="50%"><img src="docs/13_timers.png" alt="Timers"><br><sub><b>Event timers</b> with CPU / GPU load.</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="docs/14_arrow.png" alt="Waypoint arrow"><br><sub><b>New 3D arrow</b> with distance and height.</sub></td>
-<td width="50%"><img src="docs/15_petfarm.png" alt="Pet farm list"><br><sub><b>Pet farm list</b> with guided farming.</sub></td>
+<td width="50%"><img src="docs/14_hud.png" alt="Minimap"><br><sub><b>Minimap</b> and waypoint arrow.</sub></td>
+<td width="50%"><img src="docs/15_arrow.png" alt="Waypoint arrow"><br><sub><b>New 3D arrow</b> with distance and height.</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="docs/16_widgets.png" alt="Widgets"><br><sub><b>Widgets</b>: place every widget.</sub></td>
-<td width="50%"><img src="docs/17_keybinds.png" alt="Keybinds"><br><sub><b>Keybinds</b>: change every shortcut.</sub></td>
+<td width="50%"><img src="docs/16_petfarm.png" alt="Pet farm list"><br><sub><b>Pet farm list</b> with guided farming.</sub></td>
+<td width="50%"><img src="docs/17_widgets.png" alt="Widgets"><br><sub><b>Widgets</b>: place every widget.</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="docs/18_sounds.png" alt="Sounds"><br><sub><b>Sounds</b>: pick the sound of every alert.</sub></td>
-<td width="50%"><img src="docs/19_tour.png" alt="Guided tour"><br><sub><b>Guided tour</b> on first run.</sub></td>
+<td width="50%"><img src="docs/18_keybinds.png" alt="Keybinds"><br><sub><b>Keybinds</b>: change every shortcut.</sub></td>
+<td width="50%"><img src="docs/19_sounds.png" alt="Sounds"><br><sub><b>Sounds</b>: pick the sound of every alert.</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="docs/21_help.png" alt="Built-in help"><br><sub><b>Built-in help</b> on the map.</sub></td>
-<td width="50%"><img src="docs/22_install.png" alt="Install"><br><sub><b>One installer</b>, always the latest version.</sub></td>
+<td width="50%"><img src="docs/20_tour.png" alt="Guided tour"><br><sub><b>Guided tour</b> on first run.</sub></td>
+<td width="50%"><img src="docs/22_help.png" alt="Built-in help"><br><sub><b>Built-in help</b> on the map.</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="docs/23_autostart.png" alt="Automatic start"><br><sub><b>Starts by itself</b> when you play.</sub></td>
+<td width="50%"><img src="docs/23_install.png" alt="Install"><br><sub><b>One installer</b>, always the latest version.</sub></td>
+<td width="50%"><img src="docs/24_autostart.png" alt="Automatic start"><br><sub><b>Starts by itself</b> when you play.</sub></td>
+</tr>
+<tr>
 <td width="50%"><img src="docs/widgets_resize.gif" alt="Widgets: drag to move, scroll the mouse wheel to resize"><br><sub><b>Resize widgets</b>: scroll the mouse wheel over one.</sub></td>
 </tr>
 </table>
@@ -154,7 +154,7 @@ Global hotkeys work in game. Map keys work while the map is open, and <kbd>F1</k
 | <kbd>Tab</kbd> | Next zone | | <kbd>K</kbd> | Bosses card |
 | <kbd>B</kbd> | Side panel | | Right-click | Fit the map to the screen |
 
-<div align="center"><img src="docs/19_hotkeys.png" alt="Shortcuts" width="80%"></div>
+<div align="center"><img src="docs/21_hotkeys.png" alt="Shortcuts" width="80%"></div>
 
 ## Updates
 
