@@ -18,8 +18,8 @@ body:
     id: version
     attributes:
       label: Aion2-QoL version
-      description: The version you installed, for example 1.9.5.
-      placeholder: "1.9.5"
+      description: The version you installed, for example 1.9.6.
+      placeholder: "1.9.6"
     validations:
       required: true
   - type: input
