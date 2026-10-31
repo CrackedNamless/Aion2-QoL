@@ -2,6 +2,21 @@
 
 Notes for each release also appear on the [Releases](https://github.com/CrackedNamless/Aion2-QoL/releases) page. Versions before 1.4.0 are listed there.
 
+## 1.9.6
+
+### Added
+- **Soul crystal balance in the pet list.** A strip under the Pet farm header shows how many Cogni, Fera, Natura, Varian, Special and Rainbow soul crystals you hold, with the game's own icons. It fills in when you enter the world, is remembered per character, and a balance that goes up flashes briefly. Hover a crystal to see the full count.
+
+### Changed
+- **Round pet portraits and smoother progress bars.** Each pet in the farm list has a round portrait with a soft glow in its type colour, and the three stage bars now fill with a gradient that grows brighter as the stage nears completion.
+- **CPU temperature is temporarily removed.** It did not work reliably, so the CPU cell on the timer strip shows load only (the GPU cell keeps its temperature). It will not be added back until it works.
+
+### Fixed
+- **The minimap no longer shows on maps it cannot track.** On the starter areas and in dungeons it used to appear with a position that did not match, because the game uses different world names there. It now appears only on Altgard, Verteron and Reshanta.
+- **The boss widget is hidden in dungeons.** It only has something to show in the open world, so it no longer stays on screen inside a dungeon.
+- **Menu hiding works again on PCs where it kept dropping out.** After the app re-attached to the game it waited up to 30 seconds before looking for the game's world data again, so the world name and the open-menu flag were missing most of the time. It now looks again straight away.
+- **Checked on the Purple Global version of the game.** Some players reported problems there; the add-on was tested on it and everything works correctly.
+
 ## 1.9.5
 
 ### Added
